@@ -135,6 +135,262 @@ D. 192.0.2.0/24
       <p class="section-note">
         Link-local addresses, global unicast, multicast groups, ND, SLAAC, etc.
       </p>
+	  <div class="question">
+    <div class="question-title">Q10</div>
+    <div class="question-body">
+Which command automatically generates an IPv6 address from a specified IPv6 prefix and MAC address
+of an interface?
+A. ipv6 address dhcp
+B. ipv6 address 2001:DB8:5:112::/64 eui-64
+C. ipv6 address autoconfig
+D. ipv6 address 2001:DB8:5:112::2/64 link-local
+    </div>
+    <div class="question-note">
+      Answer: C
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q11</div>
+    <div class="question-body">
+When configuring IPv6 on an interface, which two IPv6 multicast groups are joined? (Choose two.)
+A. 2000::/3
+B. 2002::5
+C. FC00::/7
+D. FF02::1
+E. FF02::2
+    </div>
+    <div class="question-note">
+      Answer: D, E
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q17</div>
+    <div class="question-body">
+Which IPv6 address type provides communication between subnets and cannot route on the Internet?
+A. link-local
+B. unique local
+C. multicast
+D. global unicast
+    </div>
+    <div class="question-note">
+      Answer: B
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q18</div>
+    <div class="question-body">
+Which IPv6 address block sends packets to a group address rather than a single address?
+A. 2000::/3
+B. FC00::/7
+C. FE80::/10
+D. FF00::/8
+    </div>
+    <div class="question-note">
+      Answer: D
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q24</div>
+    <div class="question-body">
+Which action must be taken to assign a global unicast IPv6 address on an interface that is derived from the
+MAC address of that interface?
+A. explicitly assign a link-local address
+B. disable the EUI-64 bit process
+C. enable SLAAC on an interface
+D. configure a stateful DHCPv6 server on the network
+    </div>
+    <div class="question-note">
+      Answer: C
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q29</div>
+    <div class="question-body">
+Which IPv6 address block forwards packets to a multicast address rather than a unicast address?
+A. 2000::/3
+B. FC00::/7
+C. FE80::/10
+D. FF00::/12
+    </div>
+    <div class="question-note">
+      Answer: D
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q32</div>
+    <div class="question-body">
+Which type of IPv6 address is publicly routable in the same way as IPv4 public addresses?
+A. multicast
+B. unique local
+C. link-local
+D. global unicast
+    </div>
+    <div class="question-note">
+      Answer: D
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q52</div>
+    <div class="question-body">
+Which technique can you use to route IPv6 traffic over an IPv4 infrastructure?
+A. NAT
+B. 6 to 4 tunneling
+C. L2TPv3
+D. dual-stack
+    </div>
+    <div class="question-note">
+      Answer: B
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q60</div>
+    <div class="question-body">
+What is the binary pattern of an IPv6 unique local address?
+A. 00000000
+B. 11111100
+C. 11111111
+D. 11111101
+    </div>
+    <div class="question-note">
+      Answer: B
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q76</div>
+    <div class="question-body">
+A network engineer must configure the router R1 GigabitEthernet1/1 interface to connect to the router R2
+GigabitEthernet1/1 interface. For the configuration to be applied, the engineer must compress the address
+2001:0DB8:0000:0000:0500:000A:400F:583B. Which command must be issued on the interface?
+A. ipv6 address 2001::db8:0000::500:a:400F:583B
+B. ipv6 address 2001:db8:0::500:a:4F:583B
+C. ipv6 address 2001:db8::500:a:400F:583B
+D. ipv6 address 2001:0db8::5:a:4F:583B
+    </div>
+    <div class="question-note">
+      Answer: C
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q94</div>
+    <div class="question-body">
+Why was the RFC 1918 address space defined?
+A. conserve public IPv4 addressing
+B. support the NAT protocol
+C. preserve public IPv6 address space
+D. reduce instances of overlapping IP addresses
+    </div>
+    <div class="question-note">
+      Answer: A
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q98</div>
+    <div class="question-body">
+A network administrator is setting up a new IPv6 network using the 64-bit address
+2001:0EB8:00C1:2200:0001:0000:0000:0331/64. To simplify the configuration, the administrator has
+decided to compress the address. Which IP address must the administrator configure?
+A. ipv6 address 2001:EB8:C1:22:1::331/64
+B. ipv6 address 21:EB8:C1:2200:1::331/64
+C. ipv6 address 2001:EB8:C1:2200:1:0000:331/64
+D. ipv6 address 2001:EB8:C1:2200:1::331/64
+    </div>
+    <div class="question-note">
+      Answer: D
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q105</div>
+    <div class="question-body">
+Which type of IPv6 address is similar to a unicast address but is assigned to multiple devices on the same
+network at the same time?
+A. global unicast address
+B. link-local address
+C. anycast address
+D. multicast address
+    </div>
+    <div class="question-note">
+      Answer: C
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q113</div>
+    <div class="question-body">
+A network engineer is installing an IPv6-only capable device. The client has requested that the device IP
+address be reachable only from the internal network.
+Which type of IPv6 address must the engineer assign?
+A. IPv4-compatible IPv6 address
+B. unique local address
+C. link-local address
+D. aggregatable global address
+    </div>
+    <div class="question-note">
+      Answer: B
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q115</div>
+    <div class="question-body">
+A network engineer must implement an IPv6 configuration on the vlan 2000 interface to create a routable
+locally-unique unicast address that is blocked from being advertised to the internet. Which configuration
+must the engineer apply?
+A. interface vlan 2000 ipv6 address ff00:0000:aaaa::1234:2343/64
+B. interface vlan 2000 ipv6 address fd00::1234:2343/64
+C. interface vlan 2000 ipv6 address fe80:0000:aaaa::1234:2343/64
+D. interface vlan 2000 ipv6 address fc00:0000:aaaa::a15d:1234:2343:8aca/64
+    </div>
+    <div class="question-note">
+      Answer: B
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q144</div>
+    <div class="question-body">
+Which two IP addressing schemes provide internet access to users on the network while preserving the
+public IPv4 address space? (Choose two.)
+A. IPv6 addressing
+B. PAT with private internal addressing
+C. single public Class A network
+D. private networks only
+E. custom addresses from ARIN
+    </div>
+    <div class="question-note">
+      Answer: A, B
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q172</div>
+    <div class="question-body">
+What is the difference between IPv6 unicast and anycast addressing?
+A. An individual IPv6 unicast address is supported on a single interface on one node, but an IPv6 anycast
+address is assigned to a group of interfaces on multiple nodes.
+B. IPv6 anycast nodes must be explicitly configured to recognize the anycast address, but IPv6 unicast
+nodes require no special configuration.
+C. IPv6 unicast nodes must be explicitly configured to recognize the unicast address, but IPv6 anycast
+nodes require no special configuration.
+D. Unlike an IPv6 anycast address, an IPv6 unicast address is assigned to a group of interfaces on
+multiple nodes.
+    </div>
+    <div class="question-note">
+      Answer: A
+    </div>
+  </div>
+
     </section>
 
     <section id="physical" class="topic-section">
