@@ -44,89 +44,238 @@
         addressing questions here.
       </p>
 	
-     <div class="question">
-    <div class="question-title">Q2</div>
-    <div class="question-body">
-Refer to the exhibit. Which prefix does Router1 use for traffic to Host A?
-A. 10.10.10.0/28
-B. 10.10.13.0/25
-C. 10.10.13.144/28
-D. 10.10.13.208/29
-    </div>
-    <div class="question-note">
-      Correct answer: D
-    </div>
-  </div>
-
-  <div class="question">
+      <div class="question">
     <div class="question-title">Q14</div>
     <div class="question-body">
-An engineer must configure a /30 subnet between two routers. Which usable IP address and subnet mask combination meets this criteria?
-A. interface e0/0 description to XX-AXXX:XXXXX ip address 192.168.1.1 255.255.255.248
-B. interface e0/0 description to XX-AXXX:XXXXX ip address 192.168.1.4 255.255.255.252
-C. interface e0/0 description to XX-AXXX:XXXXX ip address 192.168.1.9 255.255.255.248
-D. interface e0/0 description to XX-AXXX:XXXXX ip address 192.168.1.13 255.255.255.252
+An engineer must configure a /30 subnet between two routes. Which usable IP address and subnet mask
+combination meets this criteria?
+A. interface e0/0 description to XX-AXXX:XXXXX ip address 10.2.1.3 255.255.255.252
+B. interface e0/0 description to XX-AXXX:XXXXX ip address 192.168.1.1 255.255.255.248
+C. interface e0/0 description to XX-AXXX:XXXXX ip address 172.16.1.4 255.255.255.248
+D. interface e0/0 description to XX-AXXX:XXXXX ip address 209.165.201.2 225.255.255.252
     </div>
     <div class="question-note">
-      Correct answer: B
+      Answer: D
     </div>
   </div>
-
   <div class="question">
-    <div class="question-title">Q16</div>
+    <div class="question-title">Q15</div>
     <div class="question-body">
-Refer to the exhibit. Which statement explains the configuration error message that is received?
-A. It is a network IP address.
-B. It is a broadcast IP address.
-C. It is a router interface IP address.
-D. It is a reserved IP address.
+Which network allows devices to communicate without the need to access the Internet?
+A. 172.9.0.0/16
+B. 172.28.0.0/16
+C. 192.0.0.0/8
+D. 209.165.201.0/24
     </div>
     <div class="question-note">
-      Correct answer: A
+      Answer: B
     </div>
   </div>
-
-  <div class="question">
-    <div class="question-title">Q20</div>
-    <div class="question-body">
-What is a benefit of using a Cisco Wireless LAN Controller?
-A. It centralizes the management of multiple wireless access points.
-B. It eliminates the need to configure each access point individually.
-C. It supports only one SSID per controller.
-D. It does not support VLAN tagging for SSIDs.
-    </div>
-    <div class="question-note">
-      Correct answer: A
-    </div>
-  </div>
-
   <div class="question">
     <div class="question-title">Q23</div>
     <div class="question-body">
-Which IPv4 addressing scheme can be used for a small branch office of 25 users that must access the Internet?
-A. 10.0.0.0/8
-B. 172.16.0.0/12
-C. 192.168.1.0/27
-D. 192.168.1.0/29
+Which function does the range of private IPv4 addresses perform?
+A. allows multiple companies to each use the same addresses without conflicts
+B. provides a direct connection for hosts from outside of the enterprise network
+C. ensures that NAT is not required to reach the Internet with private range addressing
+D. enables secure communications to the Internet for all external hosts
     </div>
     <div class="question-note">
-      Correct answer: C
+      Answer: A
+    </div>
+  </div>
+  <div class="question">
+    <div class="question-title">Q34</div>
+    <div class="question-body">
+A corporate office uses four floors in a building.
+Floor 1 has 24 users.
+Floor 2 has 29 users.
+Floor 3 has 28 users.
+Floor 4 has 22 users.
+Which subnet summarizes and gives the most efficient distribution of IP addresses for the network?
+A. 192.168.0.0/24 as summary and 192.168.0.0/28 for each floor
+B. 192.168.0.0/25 as summary and 192.168.0.0/26 for each floor
+C. 192.168.0.0/25 as summary and 192.168.0.64/27 for each floor
+D. 192.168.0.0/26 as summary and 192.168.0.0/28 for each floor
+    </div>
+    <div class="question-note">
+      Answer: A
+    </div>
+  </div>
+  <div class="question">
+    <div class="question-title">Q37</div>
+    <div class="question-body">
+An office has 8 floors with approximately 30-40 users per floor. One subnet must be used. Which
+command must be configured on the router Switched VirtualInterface to use address space efficiently?
+A. ip address 192.168.0.0 255.255.0.0
+B. ip address 192.168.0.0 255.255.254.0
+C. ip address 192.168.0.0 255.255.255.128
+D. ip address 192.168.0.0 255.255.255.224
+    </div>
+    <div class="question-note">
+      Answer: B
+    </div>
+  </div>
+  <div class="question">
+    <div class="question-title">Q54</div>
+    <div class="question-body">
+What is the structure of a valid IPv4 address?
+A. 32 bits, grouped 8 bits at a time
+B. 32 bytes, grouped 4 bytes at a time
+C. 128 bits, grouped 32 bits at a time
+D. 64 bytes, grouped 8 bytes at a time
+    </div>
+    <div class="question-note">
+      Answer: A
+    </div>
+  </div>
+  <div class="question">
+    <div class="question-title">Q55</div>
+    <div class="question-body">
+An engineer must assign the last usable address from subnet 192.168.1.32/28 to an interface. Which
+configuration must be used?
+A. ip address 192.168.1.32 255.255.255.240
+B. ip address 192.168.1.42 255.255.255.240
+C. ip address 192.168.1.46 255.255.255.240
+D. ip address 192.168.1.47 255.255.255.240
+    </div>
+    <div class="question-note">
+      Answer: C
+    </div>
+  </div>
+  <div class="question">
+    <div class="question-title">Q57</div>
+    <div class="question-body">
+Which two goals must be met to configure a new subnet on an enterprise network? (Choose two.)
+A. Configure a static route between each subnet and the core router.
+B. Assign a new subnet with enough available IP addresses.
+C. Assign an IPv4 address to the VLAN interface.
+D. Configure the VLAN with an IP address in the new subnet.
+E. Configure each host with a unique IP address in the subnet.
+    </div>
+    <div class="question-note">
+      Answer: B, E
+    </div>
+  </div>
+  <div class="question">
+    <div class="question-title">Q61</div>
+    <div class="question-body">
+Which two statements describe how to establish a console connection to a Cisco IOS switch or router?
+(Choose two.)
+A. Use an RJ-45 crossover cable to connect the host to the switch console port.
+B. Use a USB-to-serial adapter if the host does not have a serial port.
+C. Use a rolled-over cable to connect the host to the switch console port.
+D. Use a straight-through cable to connect the host to the switch console port.
+E. Use an RJ-11 cable to connect the host to the switch console port.
+    </div>
+    <div class="question-note">
+      Answer: B, C
+    </div>
+  </div>
+  <div class="question">
+    <div class="question-title">Q81</div>
+    <div class="question-body">
+Which variable in an EIGRP configuration should match all routers within the same EIGRP domain?
+A. router ID
+B. autonomous system number
+C. K-values
+D. process ID
+    </div>
+    <div class="question-note">
+      Answer: B
+    </div>
+  </div>
+  <div class="question">
+    <div class="question-title">Q100</div>
+    <div class="question-body">
+What is an appropriate use for private IPv4 addressing?
+A. to enable communication between a host and a network printer
+B. to allow hosts inside a company to communicate with the Internet directly
+C. to conserve public IP addresses in a large enterprise
+D. to support communication between public servers on the Internet
+    </div>
+    <div class="question-note">
+      Answer: C
+    </div>
+  </div>
+  <div class="question">
+    <div class="question-title">Q106</div>
+    <div class="question-body">
+What is a characteristic of private IPv4 addressing?
+A. composed of addresses that are managed by an Internet registry organization
+B. composed of addresses that must be translated before they are routed to the Internet
+C. composed of addresses that are not globally routable
+D. composed of addresses that are globally unique
+    </div>
+    <div class="question-note">
+      Answer: C
+    </div>
+  </div>
+  <div class="question">
+    <div class="question-title">Q133</div>
+    <div class="question-body">
+How is RFC 1918 addressing used in a network?
+A. They are used as public addresses.
+B. They are used as multicast addresses.
+C. They are used as private addresses.
+D. They are used as unicast addresses.
+    </div>
+    <div class="question-note">
+      Answer: C
+    </div>
+  </div>
+  <div class="question">
+    <div class="question-title">Q142</div>
+    <div class="question-body">
+A network engineer must configure an interface with IP address 192.168.10.10/29. Which command must
+be used?
+A. ip address 192.168.10.10 255.255.255.248
+B. ip address 192.168.10.10 255.255.255.240
+C. ip address 192.168.10.10 255.255.255.252
+D. ip address 192.168.10.10 255.255.255.224
+    </div>
+    <div class="question-note">
+      Answer: A
+    </div>
+  </div>
+  <div class="question">
+    <div class="question-title">Q145</div>
+    <div class="question-body">
+The address block 192.168.32.0/24 must be subnetted into smaller networks. Which configuration
+correctly assigns an IP address to a subinterface?
+A. interface g0/0.10
+   encapsulation dot1q 10
+   ip address 192.168.32.97 255.255.255.224
+B. interface g0/0.10
+   encapsulation dot1q 10
+   ip address 192.168.32.64 255.255.255.192
+C. interface g0/0.10
+   encapsulation dot1q 10
+   ip address 192.168.32.1 255.255.255.128
+D. interface g0/0.10
+   encapsulation dot1q 10
+   ip address 192.168.32.30 255.255.255.224
+    </div>
+    <div class="question-note">
+      Answer: A
+    </div>
+  </div>
+  <!-- ... SNIP: there are 84 total questions, continuing up through Q1340 ... -->
+  <div class="question">
+    <div class="question-title">Q1340</div>
+    <div class="question-body">
+Which two reasons should an administrator use ERC 1918 addresses? (Choose two.)
+A. to allow hosts outside the enterprise to communicate with servers inside the enterprise
+B. to privately address hosts in an enterprise
+C. to save on the globally unique IPv4 addressing scheme
+D. to route public IP addresses over the Internet
+E. to securely segment traffic inside the enterprise
+    </div>
+    <div class="question-note">
+      Answer: B C
     </div>
   </div>
 
-  <div class="question">
-    <div class="question-title">Q24</div>
-    <div class="question-body">
-Which IPv4 address block is used for locally configured private addresses that never reach the Internet?
-A. 169.254.0.0/16
-B. 10.0.0.0/8
-C. 172.16.0.0/12
-D. 192.0.2.0/24
-    </div>
-    <div class="question-note">
-      Correct answer: B
-    </div>
-  </div>
 
     </section>
 
@@ -398,6 +547,105 @@ multiple nodes.
       <p class="section-note">
         Fiber vs copper, UTP categories, connectors, speed/distance questions.
       </p>
+  <div class="question">
+    <div class="question-title">Q4</div>
+    <div class="question-body">
+A frame that enters a switch fails the Frame Check Sequence. Which two interface counters are incremented? (Choose two.)
+A. input errors
+B. frame
+C. giants
+D. CRC
+E. runts
+    </div>
+    <div class="question-note">Answer: A, D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q807</div>
+    <div class="question-body">
+How do UTP and STP cables compare?
+A. UTP cables provide faster and more reliable data transfers.
+B. STP cables are shielded and protect against electromagnetic interference.
+C. STP cables are cheaper and easier to install than UTP.
+D. UTP cables are less prone to interference than STP.
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q149</div>
+    <div class="question-body">
+Which property is shared by 10GBASE-SR and 10GBASE-LR interfaces?
+A. Both use single-mode fiber.
+B. Both require UTP cabling.
+C. Both require fiber-optic cabling.
+D. Both support multimode fiber.
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q168</div>
+    <div class="question-body">
+What is the difference between 1000BASE-LX/LH and 1000BASE-ZX interfaces?
+A. ZX uses multimode only; LX/LH uses single-mode only.
+B. ZX works with dual-rate multimode; LX/LH only single-rate.
+C. ZX supports 1000 km links; LX/LH supports 70 km links.
+D. LX/LH supports links up to 10 km; ZX supports up to 70 km.
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q167</div>
+    <div class="question-body">
+A client has unreliable throughput and the interface shows a high FCS-Err count. What is the cause?
+A. cable fault
+B. speed mismatch
+C. high bandwidth usage
+D. cable too long
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q814</div>
+    <div class="question-body">
+What are two facts that differentiate optical fiber from copper cabling? (Choose two.)
+A. less expensive for patch cables
+B. carries electrical current for PoE devices
+C. greater throughput options
+D. more sensitive to temperature/moisture
+E. longer transmission distances
+    </div>
+    <div class="question-note">Answer: C, E</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q143</div>
+    <div class="question-body">
+Two switches are connected with a Cat5 cable and both access ports are down. What is the cause?
+A. speed mismatch
+B. distance not supported by Cat5
+C. incompatible duplex
+D. missing portfast command
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q815</div>
+    <div class="question-body">
+What are two behaviors of a point-to-point WAN topology? (Choose two.)
+A. uses a dedicated connection
+B. provides direct connections between every router
+C. adds redundancy between central and branches
+D. uses a single router to reach all sites
+E. connects remote networks through a single line
+    </div>
+    <div class="question-note">Answer: A, B</div>
+  </div>
+
     </section>
 
     <section id="topologies" class="topic-section">
@@ -405,6 +653,221 @@ multiple nodes.
       <p class="section-note">
         Star vs mesh, hub-and-spoke, VPN, MPLS, cloud models (IaaS/PaaS/SaaS).
       </p>
+<!-- Topologies / WAN / Cloud -->
+
+<div class="question">
+  <p><strong>Question 36.</strong> What is a characteristic of spine-and-leaf architecture?</p>
+  <ul>
+    <li>A. Each link between leaf switches allows for higher bandwidth.</li>
+    <li>B. It provides greater predictability on STP blocked ports.</li>
+    <li>C. It provides variable latency.</li>
+    <li>D. Each device is separated by the same number of hops.</li>
+  </ul>
+  <p class="answer"><strong>Answer:</strong> D</p>
+</div>
+
+<div class="question">
+  <p><strong>Question 58.</strong> Which WAN access technology is preferred for a small office / home office architecture?</p>
+  <ul>
+    <li>A. broadband cable access</li>
+    <li>B. frame-relay packet switching</li>
+    <li>C. dedicated point-to-point leased line</li>
+    <li>D. Integrated Services Digital Network switching</li>
+  </ul>
+  <p class="answer"><strong>Answer:</strong> A</p>
+</div>
+
+<div class="question">
+  <p><strong>Question 59.</strong> Which two WAN architecture options help a business scalability and reliability for the network? (Choose two.)</p>
+  <ul>
+    <li>A. single-homed branches</li>
+    <li>B. dual-homed branches</li>
+    <li>C. static routing</li>
+    <li>D. dynamic routing</li>
+    <li>E. GRE tunnels</li>
+  </ul>
+  <p class="answer"><strong>Answers:</strong> B, D</p>
+</div>
+
+<div class="question">
+  <p><strong>Question 65.</strong> Which function is performed by the collapsed core layer in a two-tier architecture?</p>
+  <ul>
+    <li>A. enforcing routing policies</li>
+    <li>B. marking interesting traffic for data policies</li>
+    <li>C. applying security policies</li>
+    <li>D. attaching users to the edge of the network</li>
+  </ul>
+  <p class="answer"><strong>Answer:</strong> A</p>
+</div>
+
+<div class="question">
+  <p><strong>Question 67.</strong> Which two functions are performed by the core layer in a three-tier architecture? (Choose two.)</p>
+  <ul>
+    <li>A. Provide uninterrupted forwarding service</li>
+    <li>B. Inspect packets for malicious activity</li>
+    <li>C. Ensure timely data transfer between layers</li>
+    <li>D. Provide direct connectivity for end user devices</li>
+    <li>E. Police traffic that is sent to the edge of the network</li>
+  </ul>
+  <p class="answer"><strong>Answers:</strong> A, C</p>
+</div>
+
+<div class="question">
+  <p><strong>Question 69.</strong> A manager asks a network engineer to advise which cloud service models are used so employees do not have to waste their time installing, managing, and updating software that is only used occasionally. Which cloud service model does the engineer recommend?</p>
+  <ul>
+    <li>A. infrastructure-as-a-service</li>
+    <li>B. platform-as-a-service</li>
+    <li>C. business process as a service to support different types of service</li>
+    <li>D. software-as-a-service</li>
+  </ul>
+  <p class="answer"><strong>Answer:</strong> D</p>
+</div>
+
+<div class="question">
+  <p><strong>Question 86.</strong> What is the maximum available bandwidth for a T1 point-to-point connection?</p>
+  <ul>
+    <li>A. 1.544 Mb/s</li>
+    <li>B. 2.048 Mb/s</li>
+    <li>C. 34 Mb/s</li>
+    <li>D. 155 Mb/s</li>
+  </ul>
+  <p class="answer"><strong>Answer:</strong> A</p>
+</div>
+
+<div class="question">
+  <p><strong>Question 88.</strong> Which characteristic is unique to a cloud-based network topology?</p>
+  <ul>
+    <li>A. dedicated leased line between all sites</li>
+    <li>B. centralized application deployment accessible over the Internet</li>
+    <li>C. fixed physical paths between each network node</li>
+    <li>D. strictly on-premises routing and switching</li>
+  </ul>
+  <p class="answer"><strong>Answer:</strong> B</p>
+</div>
+
+<div class="question">
+  <p><strong>Question 119.</strong> What is the collapsed layer in collapsed core architectures?</p>
+  <ul>
+    <li>A. Core and distribution</li>
+    <li>B. access and WAN</li>
+    <li>C. distribution and access</li>
+    <li>D. core and WAN</li>
+  </ul>
+  <p class="answer"><strong>Answer:</strong> A</p>
+</div>
+
+<div class="question">
+  <p><strong>Question 120.</strong> What is a characteristic of a SOHO network?</p>
+  <ul>
+    <li>A. includes at least three tiers of devices to provide load balancing and redundancy</li>
+    <li>B. connects each switch to every other switch in the network</li>
+    <li>C. enables multiple users to share a single broadband connection</li>
+    <li>D. provides high throughput access for 1000 or more users</li>
+  </ul>
+  <p class="answer"><strong>Answer:</strong> C</p>
+</div>
+
+<div class="question">
+  <p><strong>Question 138.</strong> Which WAN topology has the highest degree of reliability?</p>
+  <ul>
+    <li>A. point-to-point</li>
+    <li>B. router-on-a-stick</li>
+    <li>C. full mesh</li>
+    <li>D. hub-and-spoke</li>
+  </ul>
+  <p class="answer"><strong>Answer:</strong> C</p>
+</div>
+
+<div class="question">
+  <p><strong>Question 162.</strong> What is a benefit for external users who consume public cloud resources?</p>
+  <ul>
+    <li>A. They must be on the same private network as the provider.</li>
+    <li>B. Resources are accessed over the Internet from anywhere.</li>
+    <li>C. They manage the hypervisor directly.</li>
+    <li>D. They are responsible for all physical security controls.</li>
+  </ul>
+  <p class="answer"><strong>Answer:</strong> B</p>
+</div>
+
+<div class="question">
+  <p><strong>Question 171.</strong> What is the path for traffic sent from one user workstation to another workstation on a separate switch in a three-tier architecture model?</p>
+  <ul>
+    <li>A. access → core → access</li>
+    <li>B. access → distribution → distribution → access</li>
+    <li>C. access → core → distribution → access</li>
+    <li>D. access → distribution → core → distribution → access</li>
+  </ul>
+  <p class="answer"><strong>Answer:</strong> D</p>
+</div>
+
+<div class="question">
+  <p><strong>Question 174.</strong> Which WAN topology provides a combination of simplicity, quality, and availability?</p>
+  <ul>
+    <li>A. partial mesh</li>
+    <li>B. full mesh</li>
+    <li>C. point-to-point</li>
+    <li>D. hub-and-spoke</li>
+  </ul>
+  <p class="answer"><strong>Answer:</strong> C</p>
+</div>
+
+<div class="question">
+  <p><strong>Question 177.</strong> How are the switches in a spine-and-leaf topology interconnected?</p>
+  <ul>
+    <li>A. Each leaf switch is connected to one of the spine switches.</li>
+    <li>B. Each leaf switch is connected to each spine switch.</li>
+    <li>C. Each leaf switch is connected to two spine switches, making a loop.</li>
+    <li>D. Each leaf switch is connected to a central leaf switch, then uplinked to a core spine switch.</li>
+  </ul>
+  <p class="answer"><strong>Answer:</strong> B</p>
+</div>
+
+<div class="question">
+  <p><strong>Question 800.</strong> What is a benefit of a point-to-point leased line?</p>
+  <ul>
+    <li>A. It shares bandwidth with multiple customers.</li>
+    <li>B. It provides dedicated bandwidth between two sites.</li>
+    <li>C. It automatically reroutes around failures using the provider network.</li>
+    <li>D. It uses best-effort delivery over the Internet.</li>
+  </ul>
+  <p class="answer"><strong>Answer:</strong> B</p>
+</div>
+
+<div class="question">
+  <p><strong>Question 808.</strong> What are two disadvantages of a full-mesh topology? (Choose two.)</p>
+  <ul>
+    <li>A. It requires complex configuration.</li>
+    <li>B. It needs a high MTU between sites.</li>
+    <li>C. It works only with BGP between sites.</li>
+    <li>D. It has a high implementation cost.</li>
+    <li>E. It must have point-to-point communication.</li>
+  </ul>
+  <p class="answer"><strong>Answers:</strong> A, D</p>
+</div>
+
+<div class="question">
+  <p><strong>Question 812.</strong> What is a function of the core and distribution layers in a collapsed-core architecture?</p>
+  <ul>
+    <li>A. The router can support HSRP for Layer 2 redundancy in an IPv6 network.</li>
+    <li>B. The core and distribution layers are deployed on two different devices to enable failover.</li>
+    <li>C. The router operates on a single device or a redundant pair.</li>
+    <li>D. The router must use IPv4 and IPv6 addresses at Layer 3.</li>
+  </ul>
+  <p class="answer"><strong>Answer:</strong> C</p>
+</div>
+
+<div class="question">
+  <p><strong>Question 815.</strong> What are two behaviors of a point-to-point WAN topology? (Choose two.)</p>
+  <ul>
+    <li>A. It leverages a dedicated connection.</li>
+    <li>B. It provides direct connections between each router in the topology.</li>
+    <li>C. It delivers redundancy between the central office and branch offices.</li>
+    <li>D. It uses a single router to route traffic between sites.</li>
+    <li>E. It connects remote networks through a single line.</li>
+  </ul>
+  <p class="answer"><strong>Answers:</strong> B, D</p>
+</div>
+
     </section>
 
     <section id="osi" class="topic-section">
