@@ -34,6 +34,191 @@
       <p class="section-note">
         ip route syntax, default route, AD comparison, recursive/static vs dynamic.
       </p>
+
+<div class="question">
+  <div class="question-title">Q17</div>
+  <div class="question-body">
+What is the purpose of a default route?
+A. forwards packets to a local broadcast address
+B. creates a route that never expires
+C. sends packets for unknown destinations to a specified next hop
+D. advertises routes dynamically to neighbors
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q32</div>
+  <div class="question-body">
+Which command creates a default static route on a Cisco router?
+A. ip route 0.0.0.0 255.0.0.0 10.1.1.1
+B. ip route 0.0.0.0 0.0.0.0 10.1.1.1
+C. ip route 255.255.255.255 0.0.0.0 10.1.1.1
+D. ip default-route 10.1.1.1 0.0.0.0
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q43</div>
+  <div class="question-body">
+Which route is used when multiple routes exist to the same destination?
+A. the route with the lowest administrative distance
+B. the route with the longest prefix match
+C. the route with the highest bandwidth interface
+D. the route learned via a dynamic protocol
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q48</div>
+  <div class="question-body">
+Which two values are used by a router to determine the best path when multiple routes exist? (Choose two.)
+A. administrative distance
+B. longest prefix match
+C. interface bandwidth
+D. hop count
+E. latency of the link
+  </div>
+  <div class="question-note">Answer: A, B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q64</div>
+  <div class="question-body">
+What is the administrative distance of a static route?
+A. 0
+B. 1
+C. 90
+D. 120
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q67</div>
+  <div class="question-body">
+Which administrative distance value represents a floating static route?
+A. 0
+B. 1
+C. greater than 1
+D. less than 1
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q99</div>
+  <div class="question-body">
+Which type of route must be configured for traffic destined to networks not in the routing table?
+A. summary route
+B. static host route
+C. default route
+D. multicast route
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q125</div>
+  <div class="question-body">
+Which two statements about static routing are true? (Choose two.)
+A. It requires a routing protocol to operate.
+B. It consumes less router CPU than dynamic routing.
+C. It is more secure than dynamic routing.
+D. It automatically updates when a link fails.
+E. It scales better than dynamic routing.
+  </div>
+  <div class="question-note">Answer: B, C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q129</div>
+  <div class="question-body">
+A router has two routes to the same destination prefix. One is a static route, and one is learned via OSPF.
+Which route is installed into the routing table?
+A. The OSPF route
+B. The static route
+C. Both, load-balanced
+D. Neither
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q183</div>
+  <div class="question-body">
+What is a characteristic of recursive static routes?
+A. They use only directly connected next hops.
+B. They require a next-hop IP address and resolve the outgoing interface.
+C. They require only an outgoing interface.
+D. They are used only when connected routes fail.
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q188</div>
+  <div class="question-body">
+Which characteristic describes a floating static route?
+A. It has an AD of 1.
+B. It is always preferred over dynamic routes.
+C. It is installed only when the primary route is unavailable.
+D. It must use a directly connected next hop.
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q198</div>
+  <div class="question-body">
+Which command creates a floating static route?
+A. ip route 192.168.1.0 255.255.255.0 10.1.1.1
+B. ip route 192.168.1.0 255.255.255.0 10.1.1.1 200
+C. ip route 192.168.1.0 255.255.255.0 tunnel0
+D. ip route 192.168.1.0 255.255.255.0 10.1.1.254 1
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q201</div>
+  <div class="question-body">
+Which command configures a static route out an interface?
+A. ip route 10.1.1.0 255.255.255.0 10.1.1.1
+B. ip route 10.1.1.0 255.255.255.0 gi0/1
+C. ip static 10.1.1.0 255.255.255.0 10.1.1.1
+D. ip static 10.1.1.0 gi0/1
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q207</div>
+  <div class="question-body">
+What is the effect of configuring a static route with an AD of 250?
+A. It becomes the primary route.
+B. It becomes a floating static route.
+C. It is used only if the interface bandwidth is low.
+D. It is always preferred over dynamic routes.
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q234</div>
+  <div class="question-body">
+A router has a static route to 192.168.50.0/24 and an OSPF-learned route to the same prefix. The static
+route has administrative distance 200. Which route is installed?
+A. the OSPF route
+B. the static route
+C. both routes, load-balanced
+D. neither route
+  </div>
+  <div class="question-note">Answer: A</div>
+</div>
+
     </section>
 
     <section id="routing-table" class="topic-section">
@@ -41,6 +226,95 @@
       <p class="section-note">
         How to read &quot;show ip route&quot;, longest match, metric/AD decisions.
       </p>
+  <div class="question">
+    <div class="question-title">Q89</div>
+    <div class="question-body">
+Which network action occurs within the data plane?
+A. reply to an incoming ICMP echo request
+B. make a configuration change from an incoming NETCONF RPC
+C. run routing protocols (OSPF, EIGRP, RIP, BGP)
+D. compare the destination IP address to the IP routing table
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q159</div>
+    <div class="question-body">
+Which action is taken by the data plane within a network device?
+A. Constructs a routing table based on a routing protocol.
+B. Forwards traffic to the next hop.
+C. Looks up an egress interface in the forwarding information base.
+D. Provides CLI access to the network device.
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q164</div>
+    <div class="question-body">
+Which key function is provided by the data plane?
+A. Originating packets
+B. Exchanging routing table data
+C. Making routing decisions
+D. Forwarding traffic to the next hop
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q408</div>
+    <div class="question-body">
+Which two pieces of information can you learn by viewing the routing table? (Choose two.)
+A. whether an ACL was applied inbound or outbound to an interface
+B. the EIGRP or BGP autonomous system
+C. whether the administrative distance was manually or dynamically configured
+D. which neighbor adjacencies are established
+E. the length of time that a route has been known
+    </div>
+    <div class="question-note">Answer: B, E</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q417</div>
+    <div class="question-body">
+R1 has learned route 192.168.12.0/24 via IS-IS, OSPF, RIP, and Internal EIGRP. Under normal operating
+conditions, which routing protocol is installed in the routing table?
+A. IS-IS
+B. Internal EIGRP
+C. RIP
+D. OSPF
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q485</div>
+    <div class="question-body">
+A packet from a company's branch office is destined to host 172.31.0.1 at headquarters. The sending router
+has three possible matches in its routing table for the packet: 172.31.0.0/16, 172.31.0.0/24, and
+172.31.0.0/25. How does the router handle the packet?
+A. It sends the traffic via prefix 172.31.0.0/24.
+B. It sends the traffic via prefix 172.31.0.0/16.
+C. It sends the traffic via prefix 172.31.0.0/25.
+D. It sends the traffic via the default gateway 0.0.0.0/0.
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1316</div>
+    <div class="question-body">
+Which Windows command is used instead of the route print command to display the contents of the IP
+routing table?
+A. ipconfig
+B. netstat -r
+C. netstat -n
+D. ifconfig
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
     </section>
 
     <section id="ospf" class="topic-section">
@@ -48,6 +322,158 @@
       <p class="section-note">
         Neighbors, DR/BDR basics, OSPF network types, cost, router IDs.
       </p>
+<section id="ospf-single-area">
+  <h2>OSPF – Single Area</h2>
+
+  <div class="question">
+    <div class="question-title">Q353</div>
+    <div class="question-body">
+Which two minimum parameters must be configured on an active interface to enable OSPFv2 to operate? (Choose two.)<br>
+A. OSPF process ID<br>
+B. OSPF MD5 authentication key<br>
+C. OSPF stub flag<br>
+D. IPv6 address<br>
+E. OSPF area
+    </div>
+    <div class="question-note">Answer: A, E</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q401</div>
+    <div class="question-body">
+If the router ID has not been manually set, what router ID will OSPF choose?<br>
+A. 10.1.1.2<br>
+B. 10.154.154.1<br>
+C. 172.16.5.1<br>
+D. 192.168.5.3
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q404</div>
+    <div class="question-body">
+Which two statements are true about a loopback address configured for OSPF? (Choose two.)<br>
+A. It ensures data forwarding<br>
+B. It provides stability for the OSPF process<br>
+C. It specifies the router ID<br>
+D. It decreases metric values<br>
+E. It elects the DR
+    </div>
+    <div class="question-note">Answer: B, C</div>
+  </div>
+
+  <div class="question">
+    <div classquestion-title">Q405</div>
+    <div class="question-body">
+If all OSPF routers have the same priority and no loopback interface, which router ID is used?<br>
+A. First FastEthernet interface<br>
+B. Console interface<br>
+C. Highest IP address among active interfaces<br>
+D. Lowest IP address among active interfaces
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q406</div>
+    <div class="question-body">
+Which two tasks does the OSPF Hello protocol perform? (Choose two.)<br>
+A. Dynamic neighbor discovery<br>
+B. Detects unreachable neighbors every 90 seconds<br>
+C. Maintains neighbor relationships<br>
+D. Negotiates correctness parameters<br>
+E. Elects DR based on fast links<br>
+F. Broadcasts Hellos throughout the internetwork
+    </div>
+    <div class="question-note">Answer: A, C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q395</div>
+    <div class="question-body">
+Which statements describe OSPF? (Choose three.)<br>
+A. It supports VLSM<br>
+B. It is used to route between autonomous systems<br>
+C. It confines instability to one area<br>
+D. It increases routing overhead<br>
+E. It allows extensive control of routing updates<br>
+F. It is simpler than RIP v2
+    </div>
+    <div class="question-note">Answer: A, C, E</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q397</div>
+    <div class="question-body">
+Which command displays the collection of OSPF link states?<br>
+A. show ip ospf link-state<br>
+B. show ip ospf lsa database<br>
+C. show ip ospf neighbors<br>
+D. show ip ospf database
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q483</div>
+    <div class="question-body">
+Routers R1 and R2 fail to become OSPF neighbors due to mismatched timers. Which configuration fixes the issue?<br>
+A. Configure area 2 on R2<br>
+B. Change hello-interval<br>
+C. Set the dead-interval to 40s on R2<br>
+D. Configure router-id
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q494</div>
+    <div class="question-body">
+R1 must only form a neighbor with R2, never participate in DR elections, and use RID 10.1.1.1. What configuration must be used?<br>
+A. (Correct config block shown in PDF)<br>
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q498</div>
+    <div class="question-body">
+Which configuration allows an OSPF adjacency on a point-to-point link?<br>
+A. ip ospf cost 5<br>
+B. ip ospf priority 1<br>
+C. ip ospf area 2<br>
+D. ip ospf network point-to-point
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q487</div>
+    <div class="question-body">
+R2 must become the DR but R1 was elected. Which command must be configured?<br>
+A. ip ospf priority 100<br>
+B. router-id 192.168.2.7<br>
+C. router-id 10.100.100.100<br>
+D. ip ospf priority 1
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q447</div>
+    <div class="question-body">
+Which command configures OSPF on a point-to-point link between R1 and R2?<br>
+A. router-id 10.0.0.15<br>
+B. neighbor 10.1.2.0 cost 180<br>
+C. network 10.0.0.0 0.0.0.255 area 0<br>
+D. ip ospf priority 100
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+</section>
+
     </section>
 
     <section id="fhrp" class="topic-section">
@@ -55,6 +481,161 @@
       <p class="section-note">
         HSRP/VRRP/GLBP concepts at a high level (default gateways with virtual IPs).
       </p>
+  <div class="question">
+    <div class="question-title">Q369</div>
+    <div class="question-body">
+Which two outcomes are predictable behaviors for HSRP? (Choose two.)<br>
+A. The two routers negotiate one router as the active router and the other as the standby router.<br>
+B. The two routers share the same interface IP address, and default gateway traffic is load-balanced
+between them.<br>
+C. The two routers synchronize configurations to provide consistent packet forwarding.<br>
+D. Each router has a different IP address, both routers act as the default gateway on the LAN, and traffic
+is load-balanced between them.<br>
+E. The two routers share a virtual IP address that is used as the default gateway for devices on the LAN.
+    </div>
+    <div class="question-note">Answer: A, E</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q371</div>
+    <div class="question-body">
+How does HSRP provide first hop redundancy?<br>
+A. It load-balances Layer 2 traffic along the path by flooding traffic out all interfaces configured with the
+same VLAN.<br>
+B. It uses a shared virtual MAC and a virtual IP address to a group of routers that serve as the default
+gateway for hosts on a LAN.<br>
+C. It forwards multiple packets to the same destination over different routed links in the data path.<br>
+D. It load-balances traffic by assigning the same metric value to more than one route to the same
+destination in the IP routing table.
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q373</div>
+    <div class="question-body">
+Which command must you enter to guarantee that an HSRP router with higher priority becomes the HSRP
+primary router after it is reloaded?<br>
+A. standby 10 preempt<br>
+B. standby 10 version 1<br>
+C. standby 10 priority 150<br>
+D. standby 10 version 2
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q374</div>
+    <div class="question-body">
+Which command should you enter to verify the priority of a router in an HSRP group?<br>
+A. show hsrp<br>
+B. show sessions<br>
+C. show interfaces<br>
+D. show standby
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q390</div>
+    <div class="question-body">
+Which value is used to determine the active router in an HSRP default configuration?<br>
+A. Router loopback address<br>
+B. Router IP address<br>
+C. Router priority<br>
+D. Router tracking number
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q437</div>
+    <div class="question-body">
+What is the purpose of using First Hop Redundancy Protocol on a specific subnet?<br>
+A. forwards multicast hello messages between routers<br>
+B. sends the default route to the hosts on a network<br>
+C. ensures a loop-free physical topology<br>
+D. filters traffic based on destination IP addressing
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q500</div>
+    <div class="question-body">
+What are two benefits of FHRPs? (Choose two.)<br>
+A. They allow encrypted traffic<br>
+B. They prevent loops in the Layer 2 network.<br>
+C. They are able to bundle multiple ports to increase bandwidth<br>
+D. They enable automatic failover of the default gateway<br>
+E. They allow multiple devices to serve as a single virtual gateway for clients in the network
+    </div>
+    <div class="question-note">Answer: D, E</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q501</div>
+    <div class="question-body">
+What is the MAC address used with VRRP as a virtual address?<br>
+A. 00-05-42-38-53-31<br>
+B. 00-00-5E-00-01-0a<br>
+C. 00-00-0C-07-AD-89<br>
+D. 00-07-C0-70-AB-01
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q502</div>
+    <div class="question-body">
+Why would VRRP be implemented when configuring a new subnet in a multivendor environment?<br>
+A. when a gateway protocol is required that supports more than two Cisco devices for redundancy<br>
+B. to interoperate normally with all vendors and provide additional security features for Cisco devices<br>
+C. to ensure that the spanning-tree forwarding path to the gateway is loop-free<br>
+D. to enable normal operations to continue after a member failure without requiring a change in a host
+ARP cache
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q433</div>
+    <div class="question-body">
+When the active router in a VRRP group fails, which router assumes the role and forwards packets?<br>
+A. forwarding<br>
+B. standby<br>
+C. backup<br>
+D. listening
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q928</div>
+    <div class="question-body">
+When deploying a new network that includes both Cisco and third-party network devices, which
+redundancy protocol avoids the interruption of network traffic if the default gateway router fails?<br>
+A. VRRP<br>
+B. FHRP<br>
+C. GLBP<br>
+D. HSRP
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q930</div>
+    <div class="question-body">
+Which Cisco proprietary protocol ensures traffic recovers immediately, transparently, and automatically
+when edge devices or access circuits fail?<br>
+A. FHRP<br>
+B. VRRP<br>
+C. HSRP<br>
+D. SLB
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
     </section>
   </div>
 
