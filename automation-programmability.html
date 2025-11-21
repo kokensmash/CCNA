@@ -34,6 +34,37 @@
       <p class="section-note">
         Traditional vs controller-based, what each plane is responsible for.
       </p>
+<section id="planes" class="topic-section">
+  <h2>Control / Data / Management Planes</h2>
+  <p class="section-note">Traditional vs controller-based networks, roles of each plane.</p>
+
+  <div class="question">
+    <div class="question-title">Q790</div>
+    <div class="question-body">
+Which network plane is centralized and manages routing decisions?
+A. management plane
+B. data plane
+C. policy plane
+D. control plane
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q724</div>
+    <div class="question-body">
+What software-defined architecture plane assists network devices with making packet-forwarding
+decisions by providing L2 reachability and L3 routing info?
+A. management plane
+B. control plane
+C. data plane
+D. policy plane
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+</section>
+
     </section>
 
     <section id="controller-based" class="topic-section">
@@ -41,6 +72,88 @@
       <p class="section-note">
         Cisco DNA Center basics, central policy, templates, telemetry.
       </p>
+<section id="controller-based" class="topic-section">
+  <h2>Controller-Based Networking</h2>
+  <p class="section-note">
+    SDN controllers, Cisco DNA Center, central policy, telemetry, northbound/southbound APIs.
+  </p>
+
+  <div class="question">
+    <div class="question-title">Q716</div>
+    <div class="question-body">
+Which statement compares traditional networks and controller-based networks?
+A. Only controller-based networks decouple the control plane and data plane.
+B. Both abstract policies from configs.
+C. Only traditional networks support central management.
+D. Only traditional networks offer centralized control plane.
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q786</div>
+    <div class="question-body">
+What is the purpose of Cisco DNA Center?
+A. Securely manage and deploy network devices
+B. Generate L2 topology diagrams
+C. Physical security
+D. Provide L3 services to autonomous APs
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q715</div>
+    <div class="question-body">
+How does Cisco DNA Center gather data from the network?
+A. call-home
+B. IPsec tunnel
+C. Cisco CLI Analyzer tool
+D. SNMP, syslog, streaming telemetry
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q719</div>
+    <div class="question-body">
+Which two characteristics describe controller-based networks? (Choose two.)
+A. Uses Telnet
+B. Admin must touch every device
+C. Uses northbound/southbound APIs
+D. Decentralizes control plane
+E. Moves control plane to a central point
+    </div>
+    <div class="question-note">Answer: C, E</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q725</div>
+    <div class="question-body">
+What are two benefits of controller-based networking compared to traditional networking? (Choose two.)
+A. reduced hardware
+B. easier troubleshooting
+C. centralized policy enforcement
+D. faster software upgrades
+E. lower power consumption
+    </div>
+    <div class="question-note">Answer: B, C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q765</div>
+    <div class="question-body">
+What is the function of “off-the-shelf” switches in a controller-based network?
+A. policy definition
+B. forwarding packets
+C. providing central view
+D. making routing decisions
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+</section>
+
     </section>
 
     <section id="apis-json" class="topic-section">
@@ -48,6 +161,101 @@
       <p class="section-note">
         REST APIs, HTTP verbs (GET/POST/PUT/DELETE), JSON key/value idea.
       </p>
+<section id="apis-json" class="topic-section">
+  <h2>APIs & JSON</h2>
+  <p class="section-note">
+    REST APIs, HTTP methods, JSON structure and encoding.
+  </p>
+
+  <div class="question">
+    <div class="question-title">Q783</div>
+    <div class="question-body">
+Which HTTP status code is returned after a successful REST API request?
+A. 200
+B. 301
+C. 404
+D. 500
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q784</div>
+    <div class="question-body">
+Which HTTP header tells a server which media type is expected by the client?
+A. Accept-Encoding
+B. Accept-Patch
+C. Content-Type: application/json
+D. Accept: application/json
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q718</div>
+    <div class="question-body">
+Which two encoding methods are supported by REST APIs? (Choose two.)
+A. SGML
+B. YAML
+C. XML
+D. JSON
+E. EBCDIC
+    </div>
+    <div class="question-note">Answer: C, D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1011</div>
+    <div class="question-body">
+What describes a northbound REST API?
+A. network-element interface using HTTP verbs
+B. SNMP GET interface
+C. application-facing GET/POST/PUT/DELETE interface
+D. device-facing control/data plane
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1012</div>
+    <div class="question-body">
+When is the HTTP PUT method used?
+A. update DNS
+B. non-idempotent operation
+C. display website
+D. read-only operation
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1013</div>
+    <div class="question-body">
+Which two HTTP methods are used by REST APIs? (Choose two.)
+A. REMOVE
+B. REDIRECT
+C. POST
+D. GET
+E. POP
+    </div>
+    <div class="question-note">Answer: C, D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q762</div>
+    <div class="question-body">
+Which set of methods is supported with REST API?
+A. GET, PUT, ERASE, CHANGE
+B. GET, POST, MOD, ERASE
+C. GET, PUT, POST, DELETE
+D. GET, POST, ERASE, CHANGE
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+</section>
+
+
     </section>
 
     <section id="tools" class="topic-section">
@@ -55,6 +263,87 @@
       <p class="section-note">
         High-level awareness of Ansible, Python scripts, NETCONF/YANG.
       </p>
+<section id="automation-yang" class="topic-section">
+  <h2>Automation Tools &amp; YANG/NETCONF</h2>
+  <p class="section-note">
+    High-level awareness of automation tools, YANG/NETCONF, and configuration automation.
+  </p>
+
+  <div class="question">
+    <div class="question-title">Q1017</div>
+    <div class="question-body">
+What is an Ansible inventory?
+A. unit of Python code
+B. file defining target devices for tasks
+C. device with Ansible installed
+D. collection of actions written in YAML
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q737</div>
+    <div class="question-body">
+Which configuration management mechanism uses TCP port 22 by default?
+A. Ansible
+B. Python
+C. Puppet
+D. Chef
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q761</div>
+    <div class="question-body">
+Which script paradigm does Puppet use?
+A. recipes and cookbooks
+B. playbooks and roles
+C. strings and marionettes
+D. manifests and modules
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q760</div>
+    <div class="question-body">
+What is a function of a southbound API?
+A. Orchestration to provision servers
+B. Automate server config
+C. Manage flow control between SDN controller and fabric
+D. Facilitate communication between controller and apps
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1009</div>
+    <div class="question-body">
+Which two northbound APIs are found in SDN? (Choose two.)
+A. REST
+B. OpenFlow
+C. SOAP
+D. NETCONF
+E. OpFlex
+    </div>
+    <div class="question-note">Answer: A, D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1010</div>
+    <div class="question-body">
+Which traditional network function is replaced by a software-defined controller?
+A. building route tables
+B. frame encapsulation
+C. NAT translation
+D. encryption/decryption for VPN
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+</section>
+
     </section>
   </div>
 
