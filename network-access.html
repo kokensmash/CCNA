@@ -36,6 +36,232 @@
         CAM table behavior, learning/aging MACs, frame forwarding/flooding,
         collision/broadcast domains.
       </p>
+
+  <div class="question">
+    <div class="question-title">Q45</div>
+    <div class="question-body">
+What is the destination MAC address of a broadcast frame?
+A. 00:00:0c:07:ac:01
+B. ff:ff:ff:ff:ff:ff
+C. 43:2e:08:00:00:0c
+D. 00:00:0c:43:2e:08
+E. 00:00:0c:ff:ff:ff
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q104</div>
+    <div class="question-body">
+Which function forwards frames to ports that have a matching destination MAC address?
+A. frame flooding
+B. frame filtering
+C. frame pushing
+D. frame switching
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q302</div>
+    <div class="question-body">
+When a switch receives a frame for an unknown destination MAC address, how is the frame handled?
+A. flooded to all ports except the origination port
+B. forwarded to the first available port
+C. broadcast to all ports on the switch
+D. inspected and dropped by the switch
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q855</div>
+    <div class="question-body">
+When a switch receives a frame from an unknown source MAC address, which action does the switch take
+with the frame?
+A. It sends the frame to ports within the CAM table identified with an unknown source MAC address.
+B. It floods the frame out all interfaces, including the interface it was received on.
+C. It associates the source MAC address with the LAN port on which it was received and saves it to the
+MAC address table.
+D. It attempts to send the frame back to the source to ensure that the source MAC address is still
+available for transmissions.
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q871</div>
+    <div class="question-body">
+Which switching feature removes unused MAC addresses from the MAC address table, which allows new
+MAC addresses to be added?
+A. MAC address aging
+B. MAC move
+C. MAC address auto purge
+D. dynamic MAC address learning
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1116</div>
+    <div class="question-body">
+How does MAC learning function on a switch?
+A. broadcasts frames to all ports without queueing
+B. sends an ARP request to locate unknown destinations
+C. adds unknown source MAC addresses to the address table
+D. sends a retransmission request when a new frame is received
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1160</div>
+    <div class="question-body">
+How does MAC learning function on a switch?
+A. protects against denial of service attacks
+B. sends frames with unknown destinations to a multicast group
+C. adds unknown source MAC addresses to the address table
+D. sends a retransmission request when a new frame is received
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1166</div>
+    <div class="question-body">
+How does frame switching function on a switch?
+A. floods unknown destinations to all ports except the receiving port
+B. buffers and forwards frames with less than 5 CRCs
+C. forwards frames to a neighbor port using CDP
+D. sends frames with unknown destinations to a multicast group
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1180</div>
+    <div class="question-body">
+An Ethernet frame arrived at switch interface G0/1, but the destination MAC address is missing from the
+MAC address table. How does the switch process the frame?
+A. It sends an ARP request to attempt to locate the destination
+B. It updates the destination to FFFF.FFFF.FFFF.
+C. It drops the frame and notifies the sending host.
+D. It floods the frame out of the remaining switch interfaces.
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1183</div>
+    <div class="question-body">
+How does MAC learning function on a switch?
+A. associates the MAC address with the port on which it is received
+B. rewrites the source and destination MAC address
+C. broadcasts frames to all ports without queueing
+D. sends an ARP request to locate unknown destinations
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1253</div>
+    <div class="question-body">
+What is a characteristic of frame switching?
+A. populates the ARP table with the egress port
+B. drops received MAC addresses not listed in the address table
+C. stores and forwards frames in a buffer and uses error checking
+D. rewrites the source and destination MAC address
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1265</div>
+    <div class="question-body">
+What is a characteristic of a Layer 2 switch?
+A. provides a single broadcast domain for all connected devices
+B. tracks the number of active TCP connections
+C. offers one collision domain for all connected devices
+D. makes forwarding decisions based on MAC addresses
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1283</div>
+    <div class="question-body">
+What is a characteristic of a Layer 2 switch?
+A. transfers all frames received to every connected device
+B. offers one collision domain for all connected devices
+C. transmits exclusively at half duplex
+D. supports segmentation using tagging protocols
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1293</div>
+    <div class="question-body">
+How does a hub handle a frame traveling to a known destination MAC address differently than a switch?
+A. The hub forwards the frame to all ports, and a switch forwards the frame to the known destination.
+B. The hub forwards the frame to all ports in the FIB table, and a switch forwards the frame the destination
+MAC is known.
+C. The hub forwards the frame using the information in the MAC table, and a switch uses data in its
+routing table.
+D. The hub forwards the frame only to the port connected to the known MAC address, and a switch
+forwards the frame to all ports.
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1306</div>
+    <div class="question-body">
+What is a characteristic of a Layer 2 switch?
+A. responsible for sending data in a particular sequence
+B. maintains stateful transaction information
+C. makes forwarding decisions based on MAC addresses
+D. filters based on a transport layer protocol
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1317</div>
+    <div class="question-body">
+What is a characteristic of frame switching?
+A. rewrites the source and destination MAC address
+B. performs a lookup to learn the destination interface
+C. sends a retransmission request when a new frame is received
+D. inspects and drops frames from unknown destinations
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1332</div>
+    <div class="question-body">
+What is a characteristic of a Layer 2 switch?
+A. tracks the number of active TCP connections
+B. maintains stateful transaction information
+C. filters based on a transport layer protocol
+D. supports segmentation using tagging protocols
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1347</div>
+    <div class="question-body">
+What is a characteristics of frame switching?
+A. floods unknown destinations to all ports except the receiving port
+B. inspects and drops frames from unknown destinations
+C. forwards frames to a neighbor port using CDP
+D. protects against denial of service attacks
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
     </section>
 
     <section id="vlans" class="topic-section">
@@ -43,6 +269,605 @@
       <p class="section-note">
         Access vs trunk ports, native VLAN, allowed VLAN lists, 802.1Q behavior.
       </p>
+  <div class="question">
+    <div class="question-title">Q91</div>
+    <div class="question-body">
+Which two network actions occur within the data plane? (Choose two.)
+A. Run routing protocols.
+B. Make a configuration change from an incoming NETCONF RPC.
+C. Add or remove an 802.1Q trunking header.
+D. Match the destination MAC address to the MAC address table.
+E. Reply to an incoming ICMP echo request.
+    </div>
+    <div class="question-note">Answer: CD</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q179</div>
+    <div class="question-body">
+What is a danger of a coexistent 802.11b and 802.11g WLANs with default Cisco Unified Wireless Network
+settings?
+A. The WLANs may not be backward compatible.
+B. WLANs must have matching SSIDs for roaming.
+C. VTP is allowed to propagate VLAN configuration information from switch to switch automatically.
+D. Spanning-tree fails to detect a switching loop increasing the likelihood of broadcast storms.
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q196</div>
+    <div class="question-body">
+Two switches are connected and using Cisco Dynamic Trunking Protocol. SW1 is set to Dynamic Auto and
+SW2 is set to Dynamic Desirable. What is the result of this configuration?
+A. The link becomes an access port.
+B. The link is in an error disabled state.
+C. The link is in a down state.
+D. The link becomes a trunk port.
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q197</div>
+    <div class="question-body">
+Which two commands must be configured on a switch port to enable access port VLAN tagging? (Choose
+two.)
+A. switchport mode access
+B. switchport access vlan &lt;vlan-id&gt;
+C. switchport mode trunk
+D. switchport trunk native vlan &lt;vlan-id&gt;
+E. switchport trunk allowed vlan &lt;vlan-list&gt;
+    </div>
+    <div class="question-note">Answer: A, B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q200</div>
+    <div class="question-body">
+What occurs when a switch port is configured for VLAN 10 but receives an untagged frame?
+A. The frame is dropped.
+B. The frame is forwarded in VLAN 1.
+C. The frame is forwarded in VLAN 10.
+D. The frame is flooded in all VLANs.
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q211</div>
+    <div class="question-body">
+Which two commands configure an access port on a Cisco switch? (Choose two.)
+A. switchport trunk allowed vlan 10
+B. switchport trunk native vlan 10
+C. switchport mode access
+D. switchport access vlan 10
+E. switchport mode trunk
+    </div>
+    <div class="question-note">Answer: C, D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q216</div>
+    <div class="question-body">
+Which type of VLAN is used to designate which traffic is untagged when crossing an 802.1Q trunk?
+A. data VLAN
+B. voice VLAN
+C. native VLAN
+D. default VLAN
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q221</div>
+    <div class="question-body">
+Which statement about VLAN trunking is true?
+A. 802.1Q encapsulation is used to identify VLANs over trunk links.
+B. Only native VLAN traffic is tagged over an 802.1Q trunk.
+C. DTP is required for all trunk links.
+D. ISL is the only trunking encapsulation supported on modern Cisco switches.
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q223</div>
+    <div class="question-body">
+What is a characteristic of a trunk port?
+A. It connects devices in the same VLAN.
+B. It forwards traffic for multiple VLANs over a single link.
+C. It allows only untagged frames to pass.
+D. It must be configured as half-duplex.
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q228</div>
+    <div class="question-body">
+Which two statements about VLAN configuration are true? (Choose two.)
+A. A switchport can belong to multiple VLANs in access mode.
+B. The default VLAN is VLAN 10 on most Cisco switches.
+C. VLAN 1 is enabled by default on all trunk ports.
+D. The native VLAN is untagged on an 802.1Q trunk.
+E. Extended-range VLANs require VTP version 1.
+    </div>
+    <div class="question-note">Answer: C, D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q240</div>
+    <div class="question-body">
+Which switchport mode allows a port to negotiate trunking with a neighboring Cisco switch using DTP?
+A. dynamic desirable
+B. access
+C. dynamic auto
+D. trunk
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q241</div>
+    <div class="question-body">
+Which switchport mode causes an interface to actively attempt to form a trunk with a neighbor?
+A. trunk
+B. dynamic desirable
+C. dynamic auto
+D. access
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q243</div>
+    <div class="question-body">
+A switchport is configured with the following commands:
+ switchport mode trunk
+ switchport trunk native vlan 99
+What happens when an untagged frame is received on this interface?
+A. It is dropped.
+B. It is forwarded on VLAN 1.
+C. It is forwarded on VLAN 99.
+D. It is flooded to all VLANs.
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q250</div>
+    <div class="question-body">
+Which command configures a switchport to carry traffic for VLANs 10, 20, and 30 only, over an 802.1Q
+trunk?
+A. switchport trunk native vlan 10,20,30
+B. switchport trunk allowed vlan 10,20,30
+C. switchport allowed vlan 10,20,30
+D. switchport trunk vlan 10,20,30
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q255</div>
+    <div class="question-body">
+Which configuration places an interface into an 802.1Q trunking state while allowing DTP to negotiate the
+encapsulation type?
+A. switchport trunk encapsulation dot1q
+   switchport mode trunk
+B. switchport trunk encapsulation dot1q
+   switchport mode dynamic desirable
+C. switchport trunk encapsulation negotiate
+   switchport mode trunk
+D. switchport trunk encapsulation negotiate
+   switchport mode access
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q265</div>
+    <div class="question-body">
+Which mode must be configured on a switchport to form a trunk with a port in dynamic auto mode?
+A. access
+B. dynamic auto
+C. dynamic desirable
+D. nonegotiate
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q273</div>
+    <div class="question-body">
+Which interface mode must be configured to connect the wired network when an autonomous AP maps
+two VLANs to its WLANs?
+A. access
+B. LAG
+C. trunk
+D. EtherChannel
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q281</div>
+    <div class="question-body">
+Which issue is prevented by ensuring that all switches in the same VTP domain share the same VTP
+configuration revision number?
+A. misconfigured VLAN trunks
+B. VLAN database inconsistencies
+C. duplicate MAC addresses
+D. STP loop formation
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q285</div>
+    <div class="question-body">
+Which type of port is used to connect the wired network when an autonomous AP maps two VLANs to its
+WLANs?
+A. access
+B. LAG
+C. trunk
+D. EtherChannel
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q286</div>
+    <div class="question-body">
+A network administrator needs to aggregate 4 ports into a single logical link which must negotiate Layer 2
+connectivity to ports on another switch. What must be configured when using active mode on both sides of
+the connection?
+A. LLDP
+B. LACP
+C. Cisco vPC
+D. 802.1Q trunks
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q291</div>
+    <div class="question-body">
+An engineer is configuring data and voice services to pass through the same port. The designated switch
+port must be configured to support two VLANs, one for carrying data traffic and another for voice traffic.
+Which configuration must be applied?
+A. switchport mode access
+   switchport access vlan 10
+   switchport voice vlan 20
+B. switchport mode trunk
+   switchport trunk allowed vlan 10,20
+C. switchport mode dynamic desirable
+   switchport trunk native vlan 10
+D. switchport mode access
+   switchport voice vlan 10
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q295</div>
+    <div class="question-body">
+Which switchport mode allows DTP to negotiate a trunk if the neighbor is set to trunk or desirable?
+A. dynamic auto
+B. dynamic desirable
+C. trunk
+D. access
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q297</div>
+    <div class="question-body">
+Which two statements about trunking are true? (Choose two.)
+A. Native VLAN frames are untagged by default.
+B. A trunk port can be an access port for one VLAN only.
+C. Trunk ports carry traffic for multiple VLANs.
+D. ISL and 802.1Q use the same encapsulation.
+E. DTP must be enabled on both ends for trunking to work.
+    </div>
+    <div class="question-note">Answer: A, C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q315</div>
+    <div class="question-body">
+Which configuration ensures that only VLAN 10 traffic is untagged when crossing an 802.1Q trunk?
+A. switchport mode trunk
+   switchport trunk allowed vlan 10
+B. switchport mode trunk
+   switchport trunk native vlan 10
+C. switchport mode access
+   switchport access vlan 10
+D. switchport mode dynamic desirable
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q549</div>
+    <div class="question-body">
+What is a characteristic of trunk ports on a Layer 2 switch?
+A. They dynamically assign VLANs based on MAC addresses.
+B. They allow multiple VLANs to traverse a single physical link.
+C. They carry only untagged frames.
+D. They cannot be used with VLAN tagging protocols.
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q614</div>
+    <div class="question-body">
+Which command places an interface into permanent trunking mode?
+A. switchport mode trunk
+B. switchport mode dynamic auto
+C. switchport mode dynamic desirable
+D. switchport trunk encapsulation dot1q
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q642</div>
+    <div class="question-body">
+Which command configures VLAN 20 as the native VLAN on an 802.1Q trunk?
+A. switchport trunk allowed vlan 20
+B. switchport mode trunk
+C. switchport trunk native vlan 20
+D. switchport access vlan 20
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q654</div>
+    <div class="question-body">
+Which problem is indicated by the "native VLAN mismatch" error on a trunk link?
+A. Different VLANs are allowed on the two ends of the trunk.
+B. The native VLAN is not configured on one side of the trunk.
+C. Control traffic is not passing correctly due to untagged frames.
+D. The trunk is configured as dynamic on one side only.
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q689</div>
+    <div class="question-body">
+Which action prevents VLAN hopping attacks on a trunk port?
+A. Configure the native VLAN to be an unused VLAN ID.
+B. Enable DTP on the trunk.
+C. Use dynamic desirable mode on both ends.
+D. Enable portfast on the trunk.
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q764</div>
+    <div class="question-body">
+Which statement describes the effect of configuring switchport trunk native vlan 999 on a trunk port?
+A. VLAN 999 is allowed on the trunk.
+B. Untagged traffic is placed into VLAN 999.
+C. VLAN 999 becomes the only VLAN allowed on the trunk.
+D. VLAN 999 is pruned from the trunk by VTP.
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q821</div>
+    <div class="question-body">
+Which two switchport modes enable DTP negotiation of a trunk link? (Choose two.)
+A. access
+B. trunk
+C. dynamic auto
+D. dynamic desirable
+E. nonegotiate
+    </div>
+    <div class="question-note">Answer: C, D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q851</div>
+    <div class="question-body">
+Which type of VLAN is used to carry voice traffic from an IP phone to a switch?
+A. data VLAN
+B. voice VLAN
+C. native VLAN
+D. default VLAN
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q852</div>
+    <div class="question-body">
+Which configuration is required on a switch interface to support an IP phone and a PC connected to the
+same physical port?
+A. trunk port with a native VLAN
+B. access port with voice VLAN
+C. routed port with subinterfaces
+D. SPAN port with monitor session
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q861</div>
+    <div class="question-body">
+Which configuration allows a port to carry both data and voice traffic with separate VLANs?
+A. switchport access vlan 10
+   switchport mode access
+B. switchport mode access
+   switchport voice vlan 20
+C. switchport mode trunk
+   switchport trunk allowed vlan 10,20
+D. switchport mode dynamic desirable
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q868</div>
+    <div class="question-body">
+Which feature allows traffic from multiple VLANs to be transported over a single physical link?
+A. PortFast
+B. EtherChannel
+C. trunking
+D. port security
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q880</div>
+    <div class="question-body">
+Which two characteristics of 802.1Q trunking are true? (Choose two.)
+A. The native VLAN is not tagged by default.
+B. All VLANs are tagged, including the native VLAN.
+C. A trunk can support up to 4094 VLANs.
+D. The trunking protocol adds a 4-byte tag to the Ethernet frame.
+E. It requires ISL encapsulation on both ends.
+    </div>
+    <div class="question-note">Answer: A, D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1036</div>
+    <div class="question-body">
+Which function does a trunk port perform on a VLAN trunk?
+A. maps a VLAN to an access port
+B. aggregates VLANs over a single physical link
+C. provides connectivity to hosts in a single VLAN
+D. restricts allowed VLANs to one per port
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1057</div>
+    <div class="question-body">
+Which two switchport configurations support an IP phone and PC connected to the same interface?
+(Choose two.)
+A. access port with a single VLAN
+B. access port with voice VLAN configured
+C. trunk port with voice VLAN configured
+D. routed port with subinterfaces
+E. SPAN port with VLAN filtering
+    </div>
+    <div class="question-note">Answer: B, C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1067</div>
+    <div class="question-body">
+Which configuration allows a trunk port to carry voice traffic from an attached IP phone?
+A. switchport mode access
+   switchport voice vlan 20
+B. switchport mode trunk
+   switchport trunk allowed vlan 20
+C. switchport mode dynamic auto
+D. switchport mode dynamic desirable
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1083</div>
+    <div class="question-body">
+Which two switchport modes will permit the formation of a trunk link using DTP? (Choose two.)
+A. access
+B. trunk
+C. dynamic auto
+D. dynamic desirable
+E. nonegotiate
+    </div>
+    <div class="question-note">Answer: C, D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1141</div>
+    <div class="question-body">
+Which two statements about a trunk port are true? (Choose two.)
+A. It can be an access port for one VLAN only.
+B. It can carry traffic for multiple VLANs.
+C. It supports VLAN tagging.
+D. It is always part of VLAN 1.
+E. It must use ISL encapsulation.
+    </div>
+    <div class="question-note">Answer: B, C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1218</div>
+    <div class="question-body">
+Which configuration restricts a trunk port to carry only VLANs 10, 20, and 30?
+A. switchport trunk allowed vlan add 10,20,30
+B. switchport trunk allowed vlan 10,20,30
+C. switchport allowed vlan 10,20,30
+D. switchport access vlan 10,20,30
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1220</div>
+    <div class="question-body">
+Which action limits the VLANs carried over a trunk to VLANs 10 and 20?
+A. switchport trunk allowed vlan 10-20
+B. switchport trunk native vlan 10
+C. switchport mode access
+D. switchport access vlan 10,20
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1226</div>
+    <div class="question-body">
+Which two features must be configured on a switchport to support an attached IP phone? (Choose two.)
+A. voice VLAN
+B. portfast
+C. trunk mode
+D. port security
+E. spanning-tree guard
+    </div>
+    <div class="question-note">Answer: A, C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1230</div>
+    <div class="question-body">
+Which two functions does a trunk port perform on a switch? (Choose two.)
+A. forwards traffic from multiple VLANs over a single link
+B. connects a switch to a single host device
+C. carries only management VLAN traffic
+D. supports VLAN tagging with 802.1Q
+E. blocks all untagged frames
+    </div>
+    <div class="question-note">Answer: A, D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q1248</div>
+    <div class="question-body">
+Which action protects a network from VLAN hopping attacks?
+A. Implement port security on internet-facing VLANs.
+B. Change the native VLAN to an unused VLAN ID.
+C. Enable dynamic ARP inspection.
+D. Configure an ACL to prevent traffic from changing VLANs.
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+
     </section>
 
     <section id="stp" class="topic-section">
@@ -52,11 +877,477 @@
       </p>
     </section>
 
+<div class="question">
+  <div class="question-title">Q62</div>
+  <div class="question-body">
+Which two port states are part of 802.1D STP? (Choose two.)
+A. learning
+B. listening
+C. forwarding
+D. discarding
+E. blocking
+  </div>
+  <div class="question-note">Answer: C, E</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q68</div>
+  <div class="question-body">
+Which statement describes RSTP topology changes?
+A. They require the root to send topology change notifications automatically.
+B. They are detected by edge ports immediately moving from blocking to forwarding.
+C. They are suppressed by STP BPDU filtering.
+D. They occur when a non-edge port transitions from discarding to forwarding or learning.
+  </div>
+  <div class="question-note">Answer: D</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q84</div>
+  <div class="question-body">
+Which two states does an RSTP edge port immediately transition to when it receives a frame? (Choose two.)
+A. discarding
+B. learning
+C. listening
+D. forwarding
+E. blocking
+  </div>
+  <div class="question-note">Answer: B, D</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q101</div>
+  <div class="question-body">
+Which two statements are characteristics of 802.1D STP? (Choose two.)
+A. Root ports are selected first on non-root bridges.
+B. It uses the concept of edge ports to speed convergence.
+C. It elects a single root bridge based on the lowest bridge ID.
+D. Alternate ports transition to forwarding when the root port fails.
+E. PortFast bypasses the learning state by default.
+  </div>
+  <div class="question-note">Answer: A, C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q147</div>
+  <div class="question-body">
+What happens to an RSTP port that receives a superior BPDU?
+A. It transitions to blocking immediately.
+B. It moves to the discarding state and resets protocol timers.
+C. It resigns its role and becomes the root port.
+D. It sends a topology change notification.
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q164</div>
+  <div class="question-body">
+Which statement describes STP port states?
+A. The learning state allows forwarding of user traffic.
+B. The blocking state listens for BPDUs and does not forward frames.
+C. The forwarding state listens for BPDUs only.
+D. The shut state occurs during reconvergence.
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q176</div>
+  <div class="question-body">
+A port on a non-root switch has the lowest cost path to the root bridge. What state is this port in?
+A. forwarding as a root port
+B. blocking as a designated port
+C. listening as an alternate port
+D. learning as a backup port
+  </div>
+  <div class="question-note">Answer: A</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q194</div>
+  <div class="question-body">
+Which measure must be taken to force a switch to become the root bridge?
+A. Configure the root secondary command on every VLAN.
+B. Lower the bridge priority value.
+C. Configure a higher spanning-tree VLAN priority value.
+D. Enable BPDU guard on core-facing interfaces.
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q212</div>
+  <div class="question-body">
+Which description of an RSTP edge port is true?
+A. A port that immediately transitions to forwarding.
+B. A port that must wait for the listening state before forwarding.
+C. A port used only between two switches.
+D. A port that must detect a BPDU before the edge role is assigned.
+  </div>
+  <div class="question-note">Answer: A</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q271</div>
+  <div class="question-body">
+Which STP feature allows a port to transition directly to forwarding without waiting through STP states?
+A. PortFast
+B. BPDU Guard
+C. Loop Guard
+D. Root Guard
+  </div>
+  <div class="question-note">Answer: A</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q333</div>
+  <div class="question-body">
+How does RSTP achieve faster convergence than STP?
+A. It uses bridge assurance.
+B. It eliminates the learning state.
+C. It redefines the port roles and allows rapid transition.
+D. It disables BPDU transmission on edge ports.
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q342</div>
+  <div class="question-body">
+Which STP term corresponds to the switch port through which the root bridge is reached?
+A. designated port
+B. root port
+C. alternate port
+D. non-designated port
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q391</div>
+  <div class="question-body">
+Which criterion is used to elect the root bridge in STP?
+A. lowest MAC address
+B. highest bridge priority
+C. lowest bridge ID
+D. lowest switchport cost
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q392</div>
+  <div class="question-body">
+Which statement about RSTP port roles is true?
+A. A designated port is never used for forwarding.
+B. An alternate port provides an alternate path to the root bridge.
+C. A root port is always in blocking mode.
+D. A backup port replaces the designated port when the root fails.
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q400</div>
+  <div class="question-body">
+Which RSTP port role provides a backup path to the root bridge?
+A. designated
+B. root
+C. alternate
+D. forwarding
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q403</div>
+  <div class="question-body">
+Which port role is assigned to a port that receives superior BPDUs?
+A. root
+B. designated
+C. backup
+D. alternate
+  </div>
+  <div class="question-note">Answer: A</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q411</div>
+  <div class="question-body">
+Which two actions does RSTP perform differently from STP? (Choose two.)
+A. RSTP has a blocking state.
+B. RSTP introduces a discarding state.
+C. RSTP uses alternate ports for rapid transition.
+D. RSTP uses inferior BPDUs to signal root changes.
+E. RSTP eliminates the listening state.
+  </div>
+  <div class="question-note">Answer: C, E</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q433</div>
+  <div class="question-body">
+Which STP port state listens for BPDUs but does not forward frames?
+A. listening
+B. blocking
+C. forwarding
+D. learning
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q461</div>
+  <div class="question-body">
+Which statement about RSTP BPDUs is true?
+A. They are sent only by the root bridge.
+B. They are broadcast as untagged frames.
+C. They are used to maintain the spanning-tree topology.
+D. They must be acknowledged by the neighbor switch.
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
+
     <section id="etherchannel" class="topic-section">
       <h2>EtherChannel</h2>
       <p class="section-note">
         LACP vs PAgP, port-channel config, requirements (speed/duplex/VLAN match).
       </p>
+
+<div class="question">
+  <div class="question-title">Q62</div>
+  <div class="question-body">
+Which two port states are part of 802.1D STP? (Choose two.)
+A. learning
+B. listening
+C. forwarding
+D. discarding
+E. blocking
+  </div>
+  <div class="question-note">Answer: C, E</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q68</div>
+  <div class="question-body">
+Which statement describes RSTP topology changes?
+A. They require the root to send topology change notifications automatically.
+B. They are detected by edge ports immediately moving from blocking to forwarding.
+C. They are suppressed by STP BPDU filtering.
+D. They occur when a non-edge port transitions from discarding to forwarding or learning.
+  </div>
+  <div class="question-note">Answer: D</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q84</div>
+  <div class="question-body">
+Which two states does an RSTP edge port immediately transition to when it receives a frame? (Choose two.)
+A. discarding
+B. learning
+C. listening
+D. forwarding
+E. blocking
+  </div>
+  <div class="question-note">Answer: B, D</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q101</div>
+  <div class="question-body">
+Which two statements are characteristics of 802.1D STP? (Choose two.)
+A. Root ports are selected first on non-root bridges.
+B. It uses the concept of edge ports to speed convergence.
+C. It elects a single root bridge based on the lowest bridge ID.
+D. Alternate ports transition to forwarding when the root port fails.
+E. PortFast bypasses the learning state by default.
+  </div>
+  <div class="question-note">Answer: A, C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q147</div>
+  <div class="question-body">
+What happens to an RSTP port that receives a superior BPDU?
+A. It transitions to blocking immediately.
+B. It moves to the discarding state and resets protocol timers.
+C. It resigns its role and becomes the root port.
+D. It sends a topology change notification.
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q164</div>
+  <div class="question-body">
+Which statement describes STP port states?
+A. The learning state allows forwarding of user traffic.
+B. The blocking state listens for BPDUs and does not forward frames.
+C. The forwarding state listens for BPDUs only.
+D. The shut state occurs during reconvergence.
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q176</div>
+  <div class="question-body">
+A port on a non-root switch has the lowest cost path to the root bridge. What state is this port in?
+A. forwarding as a root port
+B. blocking as a designated port
+C. listening as an alternate port
+D. learning as a backup port
+  </div>
+  <div class="question-note">Answer: A</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q194</div>
+  <div class="question-body">
+Which measure must be taken to force a switch to become the root bridge?
+A. Configure the root secondary command on every VLAN.
+B. Lower the bridge priority value.
+C. Configure a higher spanning-tree VLAN priority value.
+D. Enable BPDU guard on core-facing interfaces.
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q212</div>
+  <div class="question-body">
+Which description of an RSTP edge port is true?
+A. A port that immediately transitions to forwarding.
+B. A port that must wait for the listening state before forwarding.
+C. A port used only between two switches.
+D. A port that must detect a BPDU before the edge role is assigned.
+  </div>
+  <div class="question-note">Answer: A</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q271</div>
+  <div class="question-body">
+Which STP feature allows a port to transition directly to forwarding without waiting through STP states?
+A. PortFast
+B. BPDU Guard
+C. Loop Guard
+D. Root Guard
+  </div>
+  <div class="question-note">Answer: A</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q333</div>
+  <div class="question-body">
+How does RSTP achieve faster convergence than STP?
+A. It uses bridge assurance.
+B. It eliminates the learning state.
+C. It redefines the port roles and allows rapid transition.
+D. It disables BPDU transmission on edge ports.
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q342</div>
+  <div class="question-body">
+Which STP term corresponds to the switch port through which the root bridge is reached?
+A. designated port
+B. root port
+C. alternate port
+D. non-designated port
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q391</div>
+  <div class="question-body">
+Which criterion is used to elect the root bridge in STP?
+A. lowest MAC address
+B. highest bridge priority
+C. lowest bridge ID
+D. lowest switchport cost
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q392</div>
+  <div class="question-body">
+Which statement about RSTP port roles is true?
+A. A designated port is never used for forwarding.
+B. An alternate port provides an alternate path to the root bridge.
+C. A root port is always in blocking mode.
+D. A backup port replaces the designated port when the root fails.
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q400</div>
+  <div class="question-body">
+Which RSTP port role provides a backup path to the root bridge?
+A. designated
+B. root
+C. alternate
+D. forwarding
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q403</div>
+  <div class="question-body">
+Which port role is assigned to a port that receives superior BPDUs?
+A. root
+B. designated
+C. backup
+D. alternate
+  </div>
+  <div class="question-note">Answer: A</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q411</div>
+  <div class="question-body">
+Which two actions does RSTP perform differently from STP? (Choose two.)
+A. RSTP has a blocking state.
+B. RSTP introduces a discarding state.
+C. RSTP uses alternate ports for rapid transition.
+D. RSTP uses inferior BPDUs to signal root changes.
+E. RSTP eliminates the listening state.
+  </div>
+  <div class="question-note">Answer: C, E</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q433</div>
+  <div class="question-body">
+Which STP port state listens for BPDUs but does not forward frames?
+A. listening
+B. blocking
+C. forwarding
+D. learning
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q461</div>
+  <div class="question-body">
+Which statement about RSTP BPDUs is true?
+A. They are sent only by the root bridge.
+B. They are broadcast as untagged frames.
+C. They are used to maintain the spanning-tree topology.
+D. They must be acknowledged by the neighbor switch.
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
     </section>
 
     <section id="wireless-access" class="topic-section">
