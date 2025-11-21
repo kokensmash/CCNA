@@ -35,6 +35,212 @@
       <p class="section-note">
         Pools, leases, relay (ip helper), DHCPv6 modes, and related show commands.
       </p>
+<div class="question">
+  <div class="question-title">Q18</div>
+  <div class="question-body">
+Which DHCP message is sent by a client after receiving an IP offer from a DHCP server?<br>
+A. discover<br>
+B. request<br>
+C. offer<br>
+D. acknowledgment
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q28</div>
+  <div class="question-body">
+Which command configures a router interface as a DHCP relay agent?<br>
+A. ip dhcp address-client<br>
+B. ip helper-address &lt;server-ip&gt;<br>
+C. ip relay dhcp enable<br>
+D. ip dhcp forward &lt;server-ip&gt;
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q29</div>
+  <div class="question-body">
+When a DHCP client sends a release message, what happens?<br>
+A. The server frees the IP and sends acknowledgment.<br>
+B. The server removes the lease but keeps the MAC-to-IP mapping.<br>
+C. The client must restart to receive a new IP.<br>
+D. The server immediately reassigns the IP to the next requester.
+  </div>
+  <div class="question-note">Answer: A</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q30</div>
+  <div class="question-body">
+Which DHCP message is sent periodically by a client to renew its lease?<br>
+A. DHCPDISCOVER<br>
+B. DHCPOFFER<br>
+C. DHCPREQUEST<br>
+D. DHCPRELEASE
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q36</div>
+  <div class="question-body">
+Which protocol must be permitted on the network so DHCP relay can operate correctly?<br>
+A. TCP port 53<br>
+B. UDP port 68<br>
+C. UDP port 67<br>
+D. TCP port 67
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q55</div>
+  <div class="question-body">
+Which address does a DHCP client use as the destination for its initial DISCOVER message?<br>
+A. server IP<br>
+B. broadcast address<br>
+C. 224.0.0.1<br>
+D. default gateway
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q142</div>
+  <div class="question-body">
+Which command displays DHCP bindings on a Cisco router?<br>
+A. show ip dhcp pool<br>
+B. show ip dhcp binding<br>
+C. show running-config dhcp<br>
+D. show ip interface brief dhcp
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q221</div>
+  <div class="question-body">
+Which two statements describe DHCP Snooping? (Choose two.)<br>
+A. It filters DHCP server messages on untrusted ports.<br>
+B. It requires dynamic ARP inspection.<br>
+C. It allows only trusted ports to send DHCP offers.<br>
+D. It blocks DISCOVER messages on all ports.<br>
+E. It replaces the default gateway via option 3.
+  </div>
+  <div class="question-note">Answer: A, C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q244</div>
+  <div class="question-body">
+What is the effect of entering the “ip helper-address” command on an interface?<br>
+A. It forwards DHCP requests to the specified server.<br>
+B. It allows DNS queries to bypass the router.<br>
+C. It creates a DHCP pool on the interface.<br>
+D. It configures the router as a DHCPv6 relay agent.
+  </div>
+  <div class="question-note">Answer: A</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q380</div>
+  <div class="question-body">
+Which DHCP option provides the DNS server address to clients?<br>
+A. Option 50<br>
+B. Option 51<br>
+C. Option 53<br>
+D. Option 6
+  </div>
+  <div class="question-note">Answer: D</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q836</div>
+  <div class="question-body">
+Which statement about SLAAC is true?<br>
+A. It requires a DHCPv6 server.<br>
+B. It uses router advertisements to assign IPv6 addresses.<br>
+C. It is used only with static addressing.<br>
+D. It does not generate a default gateway.
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q840</div>
+  <div class="question-body">
+Which two flags are used in IPv6 Router Advertisements to determine host configuration behavior? (Choose two.)<br>
+A. T flag<br>
+B. M flag<br>
+C. L flag<br>
+D. O flag<br>
+E. R flag
+  </div>
+  <div class="question-note">Answer: B, D</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q841</div>
+  <div class="question-body">
+What is the function of the M flag in a Router Advertisement message?<br>
+A. enables SLAAC only<br>
+B. tells hosts to use DHCPv6 stateful<br>
+C. enables DHCPv6 stateless<br>
+D. instructs hosts to use only link-local addressing
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q842</div>
+  <div class="question-body">
+What is the function of the O flag in IPv6 Router Advertisements?<br>
+A. triggers stateful DHCPv6 address assignment<br>
+B. tells hosts other configuration is available from DHCPv6<br>
+C. tells hosts to use SLAAC exclusively<br>
+D. disables DHCPv6 on the subnet
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q952</div>
+  <div class="question-body">
+How does a DHCPv6 client obtain addressing information in stateless DHCPv6 mode?<br>
+A. Router Advertisement supplies full addressing.<br>
+B. DHCPv6 server provides full addressing.<br>
+C. RA provides prefix; DHCPv6 provides other info like DNS.<br>
+D. DHCPv6 provides only the link-local address.
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q953</div>
+  <div class="question-body">
+Which DHCPv6 message is sent by a device to request configuration from a DHCPv6 server?<br>
+A. Advertise<br>
+B. Solicit<br>
+C. Inform<br>
+D. Discover
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q954</div>
+  <div class="question-body">
+Which protocol do DHCPv6 messages use?<br>
+A. UDP<br>
+B. TCP<br>
+C. ICMPv6<br>
+D. GRE
+  </div>
+  <div class="question-note">Answer: A</div>
+</div>
+
     </section>
 
     <section id="nat" class="topic-section">
@@ -42,6 +248,178 @@
       <p class="section-note">
         Static vs dynamic NAT, PAT, inside/outside interfaces, translation tables.
       </p>
+  <div class="question">
+    <div class="question-title">NAT1</div>
+    <div class="question-body">
+Which two commands are used to define which interfaces participate in IPv4 NAT on a router? (Choose two.)
+A. ip nat inside
+B. ip nat outside
+C. ip nat enable
+D. ip nat source inside
+E. ip nat interface
+    </div>
+    <div class="question-note">Answer: A, B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">NAT2</div>
+    <div class="question-body">
+Which statement describes static NAT?
+A. A pool of public addresses is dynamically mapped to inside hosts.
+B. A single inside local address is permanently mapped to a single inside global address.
+C. Many inside local addresses share one inside global address using different ports.
+D. Inside and outside addresses are translated only when traffic is initiated from the outside.
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">NAT3</div>
+    <div class="question-body">
+Which statement describes dynamic NAT?
+A. It uses a one-to-one permanent mapping.
+B. It maps inside local addresses to a pool of inside global addresses as sessions are created.
+C. It always uses the same public IP for all inside hosts.
+D. It translates only destination addresses.
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">NAT4</div>
+    <div class="question-body">
+Which configuration element is required for dynamic NAT on a Cisco router?
+A. an access list to match inside traffic and a NAT pool
+B. a route-map and a policy-based route
+C. a static host route for every inside host
+D. a DHCP pool for all inside addresses
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">NAT5</div>
+    <div class="question-body">
+Which command enables PAT using a pool of addresses?
+A. ip nat inside source list 1 interface G0/0 overload
+B. ip nat inside source list 1 pool NATPOOL overload
+C. ip nat outside source list 1 pool NATPOOL overload
+D. ip nat inside source static 192.168.1.10 203.0.113.10
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">NAT6</div>
+    <div class="question-body">
+Which type of NAT is also known as NAT overload?
+A. static NAT
+B. dynamic NAT
+C. PAT
+D. bidirectional NAT
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">NAT7</div>
+    <div class="question-body">
+Which address is seen by an Internet server when an inside host accesses it through PAT?
+A. inside local address
+B. inside global address
+C. outside local address
+D. outside global address
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">NAT8</div>
+    <div class="question-body">
+Which term describes the address assigned to a host on the inside network before NAT translation?
+A. inside global
+B. inside local
+C. outside global
+D. outside local
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">NAT9</div>
+    <div class="question-body">
+Which term describes the publicly routable address that represents one or more inside hosts after NAT?
+A. inside local
+B. inside global
+C. outside local
+D. outside global
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">NAT10</div>
+    <div class="question-body">
+Which show command displays the current IPv4 NAT translations on a Cisco router?
+A. show ip nat statistics
+B. show ip nat translations
+C. show running-config nat
+D. show ip route nat
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">NAT11</div>
+    <div class="question-body">
+A router is configured with:<br>
+ip nat inside source list 1 interface G0/0 overload<br>
+What does this configuration do?<br>
+A. Creates static one-to-one translations for all ACL entries<br>
+B. Performs PAT using the IP address of interface G0/0<br>
+C. Maps the G0/0 address to a pool of inside addresses<br>
+D. Enables NAT only for traffic sourced from G0/0
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">NAT12</div>
+    <div class="question-body">
+Which two steps are required when configuring static NAT for an internal server? (Choose two.)
+A. Define a NAT pool.
+B. Configure a static inside-to-outside mapping.
+C. Mark the inside interface with ip nat inside.
+D. Enable ip nat overload on the outside interface.
+E. Configure ip helper-address on the inside interface.
+    </div>
+    <div class="question-note">Answer: B, C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">NAT13</div>
+    <div class="question-body">
+Which benefit is provided by NAT in an IPv4 network?
+A. guarantees end-to-end reachability between hosts
+B. conserves public IPv4 address space
+C. eliminates the need for routing protocols
+D. removes the need for private addressing
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">NAT14</div>
+    <div class="question-body">
+Which statement about PAT is true?
+A. Each inside host must use a different inside global address.
+B. Multiple inside hosts can share a single inside global address by using different port numbers.
+C. PAT requires one public IP for each inside host.
+D. PAT cannot translate UDP traffic.
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
     </section>
 
     <section id="dns" class="topic-section">
@@ -49,6 +427,153 @@
       <p class="section-note">
         Basic DNS behavior, HTTP/HTTPS, maybe small &quot;service behavior&quot; questions.
       </p>
+  <div class="question">
+    <div class="question-title">DNS1</div>
+    <div class="question-body">
+Which statement describes the function of DNS?
+A. It converts domain names into IP addresses.
+B. It encrypts traffic end-to-end.
+C. It provides default gateway redundancy.
+D. It forwards packets based on Layer 2 MAC tables.
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">DNS2</div>
+    <div class="question-body">
+Which protocol is used by DNS to perform most hostname lookups?
+A. TCP port 53
+B. UDP port 53
+C. UDP port 69
+D. TCP port 23
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">DNS3</div>
+    <div class="question-body">
+Which two transport protocols does DNS use? (Choose two.)
+A. TCP for zone transfers
+B. UDP for zone transfers
+C. UDP for simple queries
+D. TCP for Telnet sessions
+E. TCP for DHCP renewals
+    </div>
+    <div class="question-note">Answer: A, C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">DNS4</div>
+    <div class="question-body">
+Which DNS record type resolves a hostname to an IPv4 address?
+A. AAAA
+B. PTR
+C. A
+D. CNAME
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">DNS5</div>
+    <div class="question-body">
+Which DNS record type maps a domain name alias to another domain name?
+A. SOA
+B. CNAME
+C. NS
+D. MX
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">DNS6</div>
+    <div class="question-body">
+What is the purpose of an MX DNS record?
+A. Specifies mail exchange servers for a domain.
+B. Maps hostnames to IPv6 addresses.
+C. Maps IP addresses to hostnames.
+D. Identifies the authoritative DNS server.
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">DNS7</div>
+    <div class="question-body">
+Which protocol is used for secure web browsing?
+A. HTTP
+B. HTTPS
+C. FTP
+D. SNMPv2
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">DNS8</div>
+    <div class="question-body">
+Which port does HTTPS use by default?
+A. TCP 20
+B. TCP 21
+C. TCP 80
+D. TCP 443
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">DNS9</div>
+    <div class="question-body">
+Which protocol uses port 80 by default?
+A. HTTP
+B. SSH
+C. HTTPS
+D. SNMP
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">DNS10</div>
+    <div class="question-body">
+Which protocol downloads configuration files when a device first boots?
+A. DNS
+B. TFTP
+C. SNMP
+D. POP3
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">DNS11</div>
+    <div class="question-body">
+Which two services are identified by name in an application layer protocol? (Choose two.)
+A. HTTP
+B. SSH
+C. IP
+D. OSPF
+E. ARP
+    </div>
+    <div class="question-note">Answer: A, B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">DNS12</div>
+    <div class="question-body">
+Which two protocols operate at the application layer of the OSI model? (Choose two.)
+A. HTTPS
+B. FTP
+C. ICMP
+D. ARP
+E. VLAN trunking protocol
+    </div>
+    <div class="question-note">Answer: A, B</div>
+  </div>
+
     </section>
 
     <section id="ntp-syslog-snmp" class="topic-section">
@@ -56,6 +581,176 @@
       <p class="section-note">
         Time synchronization levels, log severity levels, basic SNMP roles.
       </p>
+    <div class="question">
+    <div class="question-title">Q58</div>
+    <div class="question-body">
+Which Syslog severity level indicates an error condition?
+A. 0
+B. 1
+C. 3
+D. 5
+    </div>
+    <div class="question-note">Answer: C (Level 3 = Error)</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q59</div>
+    <div class="question-body">
+What is the numerical severity level for Syslog "Warning" messages?
+A. 4
+B. 3
+C. 2
+D. 1
+    </div>
+    <div class="question-note">Answer: A (Level 4 = Warning)</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q60</div>
+    <div class="question-body">
+Which Syslog message level indicates a critical condition?
+A. level 0
+B. level 1
+C. level 2
+D. level 7
+    </div>
+    <div class="question-note">Answer: C (Level 2 = Critical)</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q74</div>
+    <div class="question-body">
+Which statement about NTP is true?
+A. NTP uses TCP port 123.
+B. NTP synchronizes time between devices.
+C. NTP is used only in IPv6 networks.
+D. NTP assigns IP addresses.
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q75</div>
+    <div class="question-body">
+Which protocol and port does NTP use?
+A. UDP 123
+B. TCP 123
+C. UDP 161
+D. TCP 161
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q76</div>
+    <div class="question-body">
+What is the function of the NTP stratum level?
+A. It determines the size of the time packet.
+B. It indicates the accuracy and distance from the authoritative time source.
+C. It reports device uptime.
+D. It identifies the NTP subnet mask.
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q77</div>
+    <div class="question-body">
+Which three characteristics describe the Syslog logging levels? (Choose three.)
+A. 0 is debug
+B. 7 is emergencies
+C. 0 is emergencies
+D. 6 is informational
+E. 5 is critical
+F. 7 is debugging
+    </div>
+    <div class="question-note">Answer: C, D, F</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q78</div>
+    <div class="question-body">
+Which Syslog severity level is the most severe?
+A. level 0
+B. level 3
+C. level 5
+D. level 7
+    </div>
+    <div class="question-note">Answer: A (0 = emergencies)</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q79</div>
+    <div class="question-body">
+Which SNMP component is responsible for storing information about network objects?
+A. SNMP Manager
+B. MIB
+C. Agent
+D. Syslog server
+    </div>
+    <div class="question-note">Answer: B (Management Information Base)</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q80</div>
+    <div class="question-body">
+Which statement describes the function of an SNMP agent?
+A. It sends GET requests to devices.
+B. It stores management objects in the MIB.
+C. It communicates with the network device, collecting and reporting data.
+D. It processes NTP synchronization.
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q100</div>
+    <div class="question-body">
+Which port does SNMP use to send traps?
+A. UDP 161
+B. UDP 162
+C. TCP 161
+D. TCP 162
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q133</div>
+    <div class="question-body">
+Which SNMP version provides authentication and encryption?
+A. SNMPv1
+B. SNMPv2c
+C. SNMPv3
+D. SNMP-Lite
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q136</div>
+    <div class="question-body">
+Which NTP configuration makes a device operate as a client of a remote NTP server?
+A. ntp master 5
+B. ntp server 10.1.1.1
+C. ntp disable
+D. ntp authenticate
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q145</div>
+    <div class="question-body">
+Which Syslog message level indicates normal system notifications?
+A. 5 - Notice
+B. 4 - Warning
+C. 6 - Informational
+D. 7 - Debug
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
     </section>
 
     <section id="qos" class="topic-section">
@@ -63,6 +758,105 @@
       <p class="section-note">
         Classification, marking, queuing, congestion management at a high level.
       </p>
+  <div class="question">
+    <div class="question-title">Q531</div>
+    <div class="question-body">
+Which two actions are performed by the Weighted Random Early Detection mechanism? (Choose two.)<br>
+A. It supports protocol discovery.<br>
+B. It guarantees the delivery of high-priority packets.<br>
+C. It can identify different flows with a high level of granularity.<br>
+D. It can mitigate congestion by preventing the queue from filling up.<br>
+E. It drops lower-priority packets before it drops higher-priority packets.
+    </div>
+    <div class="question-note">Answer: D, E</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q543</div>
+    <div class="question-body">
+Which feature or protocol determines whether the QoS on the network is sufficient to support IP services?<br>
+A. LLDP<br>
+B. CDP<br>
+C. IP SLA<br>
+D. EEM
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q544</div>
+    <div class="question-body">
+In QoS, which prioritization method is appropriate for interactive voice and video?<br>
+A. traffic policing<br>
+B. round-robin scheduling<br>
+C. low-latency queuing<br>
+D. expedited forwarding
+    </div>
+    <div class="question-note">Answer: C</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q546</div>
+    <div class="question-body">
+What is the purpose of traffic shaping?<br>
+A. to be a marking mechanism that identifies different flows<br>
+B. to provide fair queuing for buffered flows<br>
+C. to mitigate delays over slow links<br>
+D. to limit the bandwidth that a flow can use
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q553</div>
+    <div class="question-body">
+Which two QoS tools provide congestion management? (Choose two.)<br>
+A. CBWFQ<br>
+B. FRTS<br>
+C. CAR<br>
+D. PBR<br>
+E. PQ
+    </div>
+    <div class="question-note">Answer: A, E</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q554</div>
+    <div class="question-body">
+Which QoS tool is used to optimize voice traffic on a network that is primarily intended for data traffic?<br>
+A. WRED<br>
+B. FIFO<br>
+C. WFQ<br>
+D. PQ
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q571</div>
+    <div class="question-body">
+Which QoS traffic handling technique retains excess packets in a queue and reschedules these packets
+for later transmission when the configured maximum bandwidth has been surpassed?<br>
+A. traffic policing<br>
+B. weighted random early detection<br>
+C. traffic prioritization<br>
+D. traffic shaping
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q947</div>
+    <div class="question-body">
+Which IP header field is changed by a Cisco device when QoS marking is enabled?<br>
+A. ECN<br>
+B. Header Checksum<br>
+C. Type of Service<br>
+D. DSCP
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
     </section>
   </div>
 
