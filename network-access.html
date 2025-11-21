@@ -1109,13 +1109,6 @@ D. They must be acknowledged by the neighbor switch.
   <div class="question-note">Answer: C</div>
 </div>
 
-
-    <section id="etherchannel" class="topic-section">
-      <h2>EtherChannel</h2>
-      <p class="section-note">
-        LACP vs PAgP, port-channel config, requirements (speed/duplex/VLAN match).
-      </p>
-
 <div class="question">
   <div class="question-title">Q62</div>
   <div class="question-body">
@@ -1348,6 +1341,96 @@ D. They must be acknowledged by the neighbor switch.
   <div class="question-note">Answer: C</div>
 </div>
 
+
+
+    <section id="etherchannel" class="topic-section">
+      <h2>EtherChannel</h2>
+      <p class="section-note">
+        LACP vs PAgP, port-channel config, requirements (speed/duplex/VLAN match).
+      </p>
+
+  <div class="question">
+    <div class="question-title">Q190</div>
+    <div class="question-body">
+Which mode must be used to configure EtherChannel between two switches without using a negotiation
+protocol?
+A. active
+B. on
+C. auto
+D. desirable
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q200</div>
+    <div class="question-body">
+Which two command sequences must be configured on a switch to establish a Layer 3 EtherChannel with
+an open-standard protocol? (Choose two.)
+A. interface GigabitEthernet0/0/1 channel-group 10 mode auto
+B. interface GigabitEthernet0/0/1 channel-group 10 mode on
+C. interface port-channel 10 no switchport
+   ip address 172.16.0.1 255.255.255.0
+D. interface GigabitEthernet0/0/1 channel-group 10 mode active
+E. interface port-channel 10 switchport
+   switchport mode trunk
+    </div>
+    <div class="question-note">Answer: C, D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q214</div>
+    <div class="question-body">
+Which two commands can you use to configure an actively negotiate EtherChannel? (Choose two.)
+A. channel-group 10 mode on
+B. channel-group 10 mode auto
+C. channel-group 10 mode passive
+D. channel-group 10 mode desirable
+E. channel-group 10 mode active
+    </div>
+    <div class="question-note">Answer: D, E</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q235</div>
+    <div class="question-body">
+How will Link Aggregation be implemented on a Cisco Wireless LAN Controller?
+A. The EtherChannel must be configured in mode active.
+B. When enabled, the WLC bandwidth drops to 500 Mbps.
+C. To pass client traffic, two or more ports must be configured.
+D. One functional physical port is needed to pass client traffic.
+    </div>
+    <div class="question-note">Answer: D</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q286</div>
+    <div class="question-body">
+A network administrator needs to aggregate 4 ports into a single logical link which must negotiate Layer 2
+connectivity to ports on another switch. What must be configured when using active mode on both sides of
+the connection?
+A. LLDP
+B. LACP
+C. Cisco vPC
+D. 802.1Q trunks
+    </div>
+    <div class="question-note">Answer: B</div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Q849</div>
+    <div class="question-body">
+Which EtherChannel mode must be configured when using LAG on a WLC?
+A. on
+B. passive
+C. active
+D. auto
+    </div>
+    <div class="question-note">Answer: A</div>
+  </div>
+
+
+
     </section>
 
     <section id="wireless-access" class="topic-section">
@@ -1355,6 +1438,216 @@ D. They must be acknowledged by the neighbor switch.
       <p class="section-note">
         SSIDs, BSSIDs, channels, 2.4/5 GHz, basic AP concepts (not deep security).
       </p>
+
+<div class="question">
+  <div class="question-title">Q111</div>
+  <div class="question-body">
+What provides centralized control of authentication and roaming in an enterprise network?
+A. a lightweight access point
+B. a wireless LAN controller
+C. a firewall
+D. a LAN switch
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q112</div>
+  <div class="question-body">
+Which set of 2.4 GHz nonoverlapping wireless channels is standard in the United States?
+A. channels 1, 6, 11, and 14
+B. channels 2, 7, 9, and 11
+C. channels 2, 7, and 11
+D. channels 1, 6, and 11
+  </div>
+  <div class="question-note">Answer: D</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q114</div>
+  <div class="question-body">
+What is a requirement for nonoverlapping Wi-Fi channels?
+A. different security settings
+B. discontinuous frequency ranges
+C. unique SSIDs
+D. different transmission speeds
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q116</div>
+  <div class="question-body">
+What are two characteristics of an SSID? (Choose two.)
+A. It uniquely identifies a client in a WLAN.
+B. It is at most 32 characters long.
+C. It uniquely identifies an access point in a WLAN.
+D. It provides secured access to a WLAN.
+E. It can be hidden or broadcast in a WLAN.
+  </div>
+  <div class="question-note">Answer: B, E</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q126</div>
+  <div class="question-body">
+What are the two functions of SSIDs? (Choose two.)
+A. uses maximum of 32 alphanumeric characters
+B. controls the speed of the Wi-Fi network
+C. used exclusively with controller-based Wi-Fi networks
+D. supports a single access point
+E. broadcasts by default
+  </div>
+  <div class="question-note">Answer: A, E</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q127</div>
+  <div class="question-body">
+Which two characteristics describe the access layer in a three-tier architecture? (Choose two.)
+A. serves as the network aggregation point
+B. physical connection point for a LAN printer
+C. designed to meet continuous redundant uptime requirements
+D. layer at which a wireless access point connects to the wired network
+E. provides a boundary between Layer 2 and Layer 3 communications
+  </div>
+  <div class="question-note">Answer: B, D</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q191</div>
+  <div class="question-body">
+Which mode allows access points to be managed by Cisco Wireless LAN Controllers?
+A. bridge
+B. lightweight
+C. mobility express
+D. autonomous
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q192</div>
+  <div class="question-body">
+Which two values must be entered when configuring a new WLAN in the WLC GUI? (Choose two.)
+A. QoS settings
+B. IP address of one or more access points
+C. SSID
+D. profile name
+E. management interface settings
+  </div>
+  <div class="question-note">Answer: C, D</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q337</div>
+  <div class="question-body">
+A WLC sends alarms about a rogue AP, which is actually legitimate. How must the alarms be stopped for the AP MAC address?
+A. Remove the AP from WLC management
+B. Place the AP into manual containment
+C. Manually remove the AP from Pending state
+D. Set the AP Class Type to Friendly
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q338</div>
+  <div class="question-body">
+What is one reason to implement LAG on a Cisco WLC?
+A. increase security for management frames
+B. enable failover to different VLANs
+C. provide link redundancy and load balancing
+D. allow stateful link failover
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q339</div>
+  <div class="question-body">
+When an access point seeks to join a WLC, which message is sent to the AP-Manager interface?
+A. Discovery response
+B. DHCP request
+C. DHCP discover
+D. Discovery request
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q341</div>
+  <div class="question-body">
+After installing Cisco ISE, what must be enabled on the WLC so wireless clients are placed into VLANs based on credentials?
+A. Disable LAG mode
+B. Enable Event Driven RRM
+C. Enable Allow AAA Override
+D. Enable Authorize MIC APs
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q334</div>
+  <div class="question-body">
+To minimize roaming delays among many APs of different types, what must be configured?
+A. 802.11v BSS Max Idle Service
+B. 802.11v Disassociation Imminent
+C. 802.11ax BSS config
+D. 802.11k neighbor list dual band
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q837</div>
+  <div class="question-body">
+Which two functions does a WLC perform that autonomous APs do themselves? (Choose two.)
+A. managing RF channels including transmit power
+B. handling association, authentication, and roaming
+C. sending and processing beacon frames
+D. encrypting/decrypting WAP traffic
+E. preventing client collisions on RF
+  </div>
+  <div class="question-note">Answer: A, B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q863</div>
+  <div class="question-body">
+At a branch office, APs must switch traffic locally and survive WAN outages. Which AP mode is required?
+A. Lightweight with local switching disabled
+B. FlexConnect with local switching enabled
+C. OfficeExtend with HA disabled
+D. Local with fallback enabled
+  </div>
+  <div class="question-note">Answer: B</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q864</div>
+  <div class="question-body">
+What is an advantage of auto PoE mode vs static when powering an AP?
+A. Power policing enabled automatically
+B. Default level is used
+C. All four cable pairs are used
+D. Detects the device is a powered device
+  </div>
+  <div class="question-note">Answer: D</div>
+</div>
+
+<div class="question">
+  <div class="question-title">Q867</div>
+  <div class="question-body">
+What is a specification for SSIDs?
+A. must include a number and a letter
+B. Cisco proprietary
+C. case sensitive
+D. defines VLAN on a switch
+  </div>
+  <div class="question-note">Answer: C</div>
+</div>
+
     </section>
   </div>
 
